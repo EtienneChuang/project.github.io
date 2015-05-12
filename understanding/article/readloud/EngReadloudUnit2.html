@@ -1,0 +1,514 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Reading aloud:Unit2</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function translationClick(obj){
+      //$('div#translation').html('<input type="button" id="bTranslation" value="隱藏">');
+      $('input#cancelTranslation').show();
+      $('div#translation').slideToggle('normal');
+  };
+  function canceltranslationClick(obj){
+      $('input#cancelTranslation').hide('slow');
+      $('div#translation').slideToggle('slow');
+  }
+  var lastID= "";
+  function dateUpdate(obj){
+    document.getElementById('tracktime').innerHTML = Math.floor(obj.currentTime) + ' / ' + Math.floor(obj.duration);
+    if(obj.currentTime!=1&&obj.currentTime<5){
+      if(Math.floor(obj.currentTime)==1){
+        //alert('ts');
+        $('#t1').css('color', 'red');
+        lastID = "#t1";
+      }
+    }
+    else if(obj.currentTime>6&&obj.currentTime<=10){
+      //alert('AAAAA');
+      if(Math.floor(obj.currentTime)==6){
+        $(lastID).css('color', 'black');
+        $('#t2').css('color', 'red');
+        lastID = "#t2";
+      }
+    }
+    else if(obj.currentTime>10&&obj.currentTime<=18){
+      if(Math.floor(obj.currentTime)==10){
+        $(lastID).css('color', 'black');
+        $('#t3').css('color', 'red');
+        lastID = "#t3";
+      }
+    }
+    else if(obj.currentTime>18&&obj.currentTime<=22){
+      if(Math.floor(obj.currentTime)==18){
+        $(lastID).css('color', 'black');
+        $('#t4').css('color', 'red');
+        lastID = "#t4";
+      }
+    }
+    else if(obj.currentTime>22&&obj.currentTime<=25){
+      if(Math.floor(obj.currentTime)==22){
+        $(lastID).css('color', 'black');
+        $('#t5').css('color', 'red');
+        lastID = "#t5";
+      }
+    }
+    else if(obj.currentTime>26&&obj.currentTime<=29){
+      if(Math.floor(obj.currentTime)==26){
+        $(lastID).css('color', 'black');
+        $('#t6').css('color', 'red');
+        lastID = "#t6";
+      }
+    }
+    else if(obj.currentTime>29&&obj.currentTime<=33){
+      if(Math.floor(obj.currentTime)==29){
+        $(lastID).css('color', 'black');
+        $('#t7').css('color', 'red');
+        lastID = "#t7";
+      }
+    }
+    else if(obj.currentTime>34&&obj.currentTime<=38){
+      if(Math.floor(obj.currentTime)==34){
+        $(lastID).css('color', 'black');
+        $('#t8').css('color', 'red');
+        lastID = "#t8";
+      }
+    }
+    else if(obj.currentTime>39&&obj.currentTime<=42){
+      if(Math.floor(obj.currentTime)==39){
+        $(lastID).css('color', 'black');
+        $('#t9').css('color', 'red');
+        lastID = "#t9";
+      }
+    }
+    else if(obj.currentTime>42&&obj.currentTime<=45){
+      if(Math.floor(obj.currentTime)==42){
+        $(lastID).css('color', 'black');
+        $('#t10').css('color', 'red');
+        lastID = "#t10";
+      }
+    }
+    else if(obj.currentTime>46&&obj.currentTime<=54){
+      if(Math.floor(obj.currentTime)==46){
+        $(lastID).css('color', 'black');
+        $('#t11').css('color', 'red');
+        lastID = "#t11";
+      }
+    }
+    else if(obj.currentTime>55&&obj.currentTime<=57){
+      if(Math.floor(obj.currentTime)==55){
+        $(lastID).css('color', 'black');
+        $('#t12').css('color', 'red');
+        lastID = "#t12";
+      }
+    }
+    else if(obj.currentTime>57&&obj.currentTime<=62){
+      if(Math.floor(obj.currentTime)==57){
+        $(lastID).css('color', 'black');
+        $('#t13').css('color', 'red');
+        lastID = "#t13";
+      }
+    }
+    else if(obj.currentTime>63&&obj.currentTime<=70){
+      if(Math.floor(obj.currentTime)==63){
+        $(lastID).css('color', 'black');
+        $('#t14').css('color', 'red');
+        lastID = "#t14";
+      }
+    }//**************************************************p3
+    else if(obj.currentTime>71&&obj.currentTime<=73){
+      if(Math.floor(obj.currentTime)==71){
+        $(lastID).css('color', 'black');
+        $('#t15').css('color', 'red');
+        lastID = "#t15";
+      }
+    }
+    else if(obj.currentTime>73&&obj.currentTime<=80){
+      if(Math.floor(obj.currentTime)==73){
+        $(lastID).css('color', 'black');
+        $('#t16').css('color', 'red');
+        lastID = "#t16";
+      }
+    }
+    else if(obj.currentTime>80&&obj.currentTime<=87){
+      if(Math.floor(obj.currentTime)==80){
+        $(lastID).css('color', 'black');
+        $('#t17').css('color', 'red');
+        lastID = "#t17";
+      }
+    }
+    else if(obj.currentTime>87&&obj.currentTime<=96){
+      if(Math.floor(obj.currentTime)==87){
+        $(lastID).css('color', 'black');
+        $('#t18').css('color', 'red');
+        lastID = "#t18";
+      }
+    }
+    else if(obj.currentTime>96&&obj.currentTime<=106){
+      if(Math.floor(obj.currentTime)==96){
+        $(lastID).css('color', 'black');
+        $('#t19').css('color', 'red');
+        lastID = "#t19";
+      }
+    }//*****************************************************p4
+    else if(obj.currentTime>107&&obj.currentTime<=115){
+      if(Math.floor(obj.currentTime)==107){
+        $(lastID).css('color', 'black');
+        $('#t20').css('color', 'red');
+        lastID = "#t20";
+      }
+    }
+    else if(obj.currentTime>115&&obj.currentTime<=119){
+      if(Math.floor(obj.currentTime)==115){
+        $(lastID).css('color', 'black');
+        $('#t21').css('color', 'red');
+        lastID = "#t21";
+      }
+    }
+    else if(obj.currentTime>120&&obj.currentTime<=126){
+      if(Math.floor(obj.currentTime)==120){
+        $(lastID).css('color', 'black');
+        $('#t22').css('color', 'red');
+        lastID = "#t22";
+      }
+    }//*********************p5
+    else if(obj.currentTime>127&&obj.currentTime<=129){
+      if(Math.floor(obj.currentTime)==127){
+        $(lastID).css('color', 'black');
+        $('#t23').css('color', 'red');
+        lastID = "#t23";
+      }
+    }
+    else if(obj.currentTime>130&&obj.currentTime<=137){
+      if(Math.floor(obj.currentTime)==130){
+        $(lastID).css('color', 'black');
+        $('#t24').css('color', 'red');
+        lastID = "#t24";
+      }
+    }
+    else if(obj.currentTime>137&&obj.currentTime<=138){
+      if(Math.floor(obj.currentTime)==137){
+        $(lastID).css('color', 'black');
+        $('#t25').css('color', 'red');
+        lastID = "#t25";
+      }
+    }
+     else if(obj.currentTime>138&&obj.currentTime<=140){
+      if(Math.floor(obj.currentTime)==138){
+        $(lastID).css('color', 'black');
+        $('#t26').css('color', 'red');
+        lastID = "#t26";
+      }
+    }
+     else if(obj.currentTime>140&&obj.currentTime<=142){
+      if(Math.floor(obj.currentTime)==140){
+        $(lastID).css('color', 'black');
+        $('#t27').css('color', 'red');
+        lastID = "#t27";
+      }
+    }
+     else if(obj.currentTime>142&&obj.currentTime<=145){
+      if(Math.floor(obj.currentTime)==142){
+        $(lastID).css('color', 'black');
+        $('#t28').css('color', 'red');
+        lastID = "#t28";
+      }
+    }
+     else if(obj.currentTime>145&&obj.currentTime<=148){
+      if(Math.floor(obj.currentTime)==145){
+        $(lastID).css('color', 'black');
+        $('#t29').css('color', 'red');
+        lastID = "#t29";
+      }
+    }
+     else if(obj.currentTime>148&&obj.currentTime<=152){
+      if(Math.floor(obj.currentTime)==148){
+        $(lastID).css('color', 'black');
+        $('#t30').css('color', 'red');
+        lastID = "#t30";
+      }
+    }
+     else if(obj.currentTime>153&&obj.currentTime<=155){
+      if(Math.floor(obj.currentTime)==153){
+        $(lastID).css('color', 'black');
+        $('#t31').css('color', 'red');
+        lastID = "#t31";
+      }
+    }
+     else if(obj.currentTime>155&&obj.currentTime<=158){
+      if(Math.floor(obj.currentTime)==155){
+        $(lastID).css('color', 'black');
+        $('#t32').css('color', 'red');
+        lastID = "#t32";
+      }
+    }
+     else if(obj.currentTime>159&&obj.currentTime<=162){
+      if(Math.floor(obj.currentTime)==159){
+        $(lastID).css('color', 'black');
+        $('#t33').css('color', 'red');
+        lastID = "#t33";
+      }
+    }
+     else if(obj.currentTime>164&&obj.currentTime<=168){
+      if(Math.floor(obj.currentTime)==164){
+        $(lastID).css('color', 'black');
+        $('#t34').css('color', 'red');
+        lastID = "#t34";
+      }
+    }
+     else if(obj.currentTime>168&&obj.currentTime<=172){
+      if(Math.floor(obj.currentTime)==168){
+        $(lastID).css('color', 'black');
+        $('#t35').css('color', 'red');
+        lastID = "#t35";
+      }
+    }
+     else if(obj.currentTime>173&&obj.currentTime<=175){
+      if(Math.floor(obj.currentTime)==173){
+        $(lastID).css('color', 'black');
+        $('#t36').css('color', 'red');
+        lastID = "#t36";
+      }
+    }
+     else if(obj.currentTime>175&&obj.currentTime<=181){
+      if(Math.floor(obj.currentTime)==175){
+        $(lastID).css('color', 'black');
+        $('#t37').css('color', 'red');
+        lastID = "#t37";
+      }
+    }
+     else if(obj.currentTime>182&&obj.currentTime<=190){
+      if(Math.floor(obj.currentTime)==182){
+        $(lastID).css('color', 'black');
+        $('#t38').css('color', 'red');
+        lastID = "#t38";
+      }
+    }
+     else if(obj.currentTime>190&&obj.currentTime<=193){
+      if(Math.floor(obj.currentTime)==190){
+        $(lastID).css('color', 'black');
+        $('#t39').css('color', 'red');
+        lastID = "#t39";
+      }
+    }
+     else if(obj.currentTime>193&&obj.currentTime<=198){
+      if(Math.floor(obj.currentTime)==193){
+        $(lastID).css('color', 'black');
+        $('#t40').css('color', 'red');
+        lastID = "#t40";
+      }
+    }
+     else if(obj.currentTime>199&&obj.currentTime<=203){
+      if(Math.floor(obj.currentTime)==199){
+        $(lastID).css('color', 'black');
+        $('#t41').css('color', 'red');
+        lastID = "#t41";
+      }
+    }
+     else if(obj.currentTime>203&&obj.currentTime<=211){
+      if(Math.floor(obj.currentTime)==203){
+        $(lastID).css('color', 'black');
+        $('#t42').css('color', 'red');
+        lastID = "#t42";
+      }
+    }
+     else if(obj.currentTime>212&&obj.currentTime<=216){
+      if(Math.floor(obj.currentTime)==212){
+        $(lastID).css('color', 'black');
+        $('#t43').css('color', 'red');
+        lastID = "#t43";
+      }
+    }
+     else if(obj.currentTime>216&obj.currentTime<=226){
+      if(Math.floor(obj.currentTime)==216){
+        $(lastID).css('color', 'black');
+        $('#t44').css('color', 'red');
+        lastID = "#t44";
+      }
+    }/*
+     else if(obj.currentTime>216&&obj.currentTime<=226){
+      if(Math.floor(obj.currentTime)==216){
+        $(lastID).css('color', 'black');
+        $('#t25').css('color', 'red');
+        lastID = "#t45";
+      }
+    }*/
+
+    else{
+      $(lastID).css('color', 'black');
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit2</a></li>
+            <li><a href="../../../EngIndex.html">Home</a></li>
+            <li><a href="../../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="#">Text-based section</a>
+              <ul>
+                <li><a href="../../article/EngArticleUnit2.html">Article</a>
+                  <ul>
+                    <li><a href="../translation/EngTranslationUnit2.html">Translation</a></li>
+                    <li><a href="#">Reading aloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/EngVocaUnit2.html">vocabulary</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/EngQuizUnit2.html">Monitoring section</a></li>
+            <li><a href="readloudUnit2.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h2><a href="../../../EngIndex.html">Home</a>-><a href="../../EngUnderstanding.html">Text-based section</a>-><a href="../EngArticleUnit2.html">Article</a><br>-><a href="#"><b>Reading aloud</b></a></h2>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2 class="h_title">Unit 2 : <font id="t1">Dogs Are More Than Man's Best Friend</font></h2>
+        </div>
+        <div class="article">
+          <audio id="track" src="unit2.mp3" controls
+            ontimeupdate="dateUpdate(this)">
+            <p>Your browser does not support the audio element</p>
+          </audio>
+          <span id="tracktime">0 / 0</span>
+          <hr>
+          <p id='1'><font id="t2">An
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>assistance</b> [əˋsɪstəns] n. 援助 ; 幫助 <br/><b><font style='background-color: #AECBEB'>assist</font></b> v. 協助 ; 幫助 <p>I need some assistance to move this big piano.</p>">assistance</b> 
+            dog isn't just a pet</font>: <font id="t3">it can be the eyes, ears, friend, and 
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>companion</b>  [kəmˋpænjən] n. 同伴 ; 朋友 <br/><b><font style='background-color: #AECBEB'>company</font></b> n. 陪伴 ; 伙伴  <p>The old lady has a cat as her companion so that she doesn't feel lonely.</p>">companion</b>
+            of a <u>disabled</u> person</font>. <font id="t4">When most people hear about assistance dogs</font>, <font id="t5">they usually think of guide dogs</font>. <font id="t6">These dogs lead people who are  
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>blind</b> [blaɪnd] adj. 失明的 ; 盲的 <br/> <p>Blind men usually hold a long stick to keep from running into things.</p>">blind</b></font>, <font id="t7">especially in busy or dangerous public places</font>, <font id="t8">and help give them back their independence</font>.
+          </p><!-- end of p1-->
+          <p id='2'><font id="t9">Hearing dogs perform a similar function</font>, <font id="t10">but for people who are
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>deaf</b> [dɛf] adj. 聾的 <br/> <p>You'll have to be patiend with deaf people because they can't hear what you say.</p>">deaf</b></font>. <font id="t11">Owners of hearing dogs say they feel safer and <u>secure</u> with the help of their trained dog</font>. <font id="t12">What's more</font>, <font id="t13">hearing dogs can
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>alert</b>  [əˋlɝt] v. 使警覺 <br/> <p>The smell of smoke alerted people that there was a fire in the building.</p>">alert</b> 
+            their owners to phone calls or messages</font>, <font id="t14">which helps deaf people stay in better tough with friends and loved ones</font>.
+          </p><!-- end of p2-->
+          <p id='3'><font id="t15">Last but not least</font>, <font id="t16">service dogs are the 
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>jack of all trades</b> 萬事通 <br/><p>If you need help with anythingm call Greg. He's a <font style='color: #F778A1'>jack of all trades</font>.<br/>若你需要任何協助，可以打電話給蓋瑞格。他是個萬事通。">jack of all trades</font> 
+            among 
+            assistance dogs</font>. <font id="t17">They can help many kinds of disabled people with a number of particular needs</font>, <font id="t18">from picking things up off the floor to simply <u>snuggling</u> and making their owner feel loved</font>. <font id="t19">Together service dogs and their owners from a unique
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>bond</b> [bɑnd] n. (情感的)連結 ; 情誼 <br/> <p>Teammates on a sports team often form close bonds and become good friends.</p>">bond</b> 
+            with each other that no other dogs can match</font>.
+          </p><!--end of p3-->
+          <p id='4'><font id="t20">While guide and hearing dogs can perform a new particular
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>task</b> [tæsk] n. 任務 ; 工作 <br/> <p>Using chopsticks can be a difficult task for young children.</p>">tasks</b> 
+            related to one <u>disability</u></font>, <font id="t21">service dogs are even more <u>versatile</u></font>. <font id="t22">One of the most 
+            <font style="background-color: #FFD5D2" id="p2"
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>well-known</b> 知名的 <br><br><b>常見與well有關的複合形容詞如下</b> : <br/><br/>well-behaved 行為端正的 ; well-dressed 穿著體面的 ;<br/> well-orderd 有秩序的 ; well-rounded 才藝雙全的 ; <br/>well-meant 好意的 ; well-educated 受過良好教育的">well-known</font> 
+            service dogs ever trained was Gretel</font>.
+          </p><!-- end of p4-->
+          <p id='5'><font id="t23">A <u>Labrador Retriever</u></font>, <font id="t24">Gretel became the first service dog in Japan in 1995</font>. <font id="t25">Her owner</font>, <font id="t26">Mr. Noguchi</font>, <font id="t27">was
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>confined</b> [kənˋfaɪnd] adj. 受限制的 <br/><b><font style='background-color: #AECBEB'>confine</font></b> v. 限制 ; 使局限<p>The family was confined to their house for the weekend because of the rainstorm.</p>">confined</b> 
+            to a <u>wheelchair</u></font>, <font id="t28">so Gretel helped him dress</font>, <font id="t29">fetched
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>grocery</b> [ˋgrosərɪ] n. 食品雜貨(常以複數形式出現) <br/> <p>Jill buys some groceries at the supermarket every week.</p>">groceries</b>
+            off the shelf</font>, <font id="t30">and even opened and closed doors for him</font>. <font id="t31">Amazingly</font>, <font id="t32">Gretel lived to be 17 years old</font>, <font id="t33">which is a very long life for a dog</font>. <font id="t34">Even when she was at the end of her life</font>, <font id="t35">she was still 
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>on duty</b> 執勤 ; 上班 <br/>Police officers aren't allowed to drink alchohol while the are <font style='color: #F778A1'>on duty</font>.<br/>警察在執勤期間禁止飲酒。">on duty
+            at Noguchi's side</font>.
+          </p><!-- end of p5-->
+          <p id='6'><font id="t36">In Taiwan</font>, <font id="t37">there is the Taiwan Assistance Dog Association(TADA)</font>, <font id="t38">which was founded to
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>educate</b> [ˋɛdʒə͵ket] v. 教育 <br/>(educate-educated-educated) <p>The teacher educated students on the importance of a healthy diet.</p>">educate</b> 
+            people about assistance dogs and train <u>canines</u></font>. <font id="t39">Under its training programs</font>, <font id="t40">puppies are taught to be assistance dogs for disabled people</font>. <font id="t41">Though its programs only started two years ago</font>, <font id="t42">TADA has already attracted many people's interest in assistance dogs</font>. <font id="t43">With the public's
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>emotional</b> [ɪˋmoʃən!]  adj. 情感的 ; 情緒的 <br/><b><font style='background-color: #AECBEB'>emotion</font></b> n. 情感 ; 情緒 <p>The sad movie made Lillie emotional and cry a lot while watching it.</p>">emotional</b>
+            and
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>financial</b>  [faɪˋnænʃəl] adj. 財務的 <br/> n.財務 ; 金融 <p>The man took a class on financial planning to learn how to make more money.</p>">financial</b>
+            support</font>, <font id="t44">TADA hopes that soon there will be enough assistance dogs trained to care for the disabled in Taiwan</font>.
+          </p><!-- end of p5-->
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../EngIndex.html">Home</a> | <a href="../../../back/EngBackground.html">Introductory section</a> | <a href="../../EngUnderstanding.html">Text-based section</a> | <a href="../../../quiz/EngQuizUnit2.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vocabulary:Unit1</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function vocaClick(obj){
+    $(obj).siblings('p').show('slow');
+  }
+  function cancel(obj){
+    $(obj).parent('p').hide('slow');
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit1</a></li>
+            <li><a href="../../EngIndex.html">Home</a></li>
+            <li><a href="../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="../EngUnderstanding.html">Text-based section</a>
+              <ul>
+                <li><a href="../article/EngArticleUnit1.html">Article</a>
+                </li>
+                <li><a href="#">Vocabulary</a>
+                  <ul>
+                    <li><a href="explanation/EngvocaExpUnit1.html">Vocabulary List</a></li>
+                   <!-- <li><a href="#">單字測驗</a></li>-->
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../quiz/EngQuizUnit1.html">Monitoring section</a></li>
+            <li><a href="vocabularyUnit1.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>	
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h2><a href="../../EngIndex.html">Home</a>-><a href="../EngUnderstanding.html">Text-based section</a>-><a href="#"><b>Vocabulary</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <a href="explanation/EngVocaExpUnit1.html"><h2>Vocabulary</h2></a>
+          <p>　Contains all vocabulary and phrases which included in the article.</p>
+          <!--
+        <a href="#"><h2>單字測驗</h2></a>
+          <p>　單字的小測驗</p>-->
+        <br>
+
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../EngIndex.html">Home</a> | <a href="../../back/EngBackground.html">Introductory section</a> | <a href="../../understanding/EngUnderstanding.html">Text-based section</a> | <a href="../../quiz/EngQuizUnit1.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

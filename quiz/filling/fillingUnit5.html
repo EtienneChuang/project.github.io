@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>填空測驗:Unit5</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+  var ans = new Array();
+  var ansLength = 3;
+  var ansCnt=0;
+  /*
+  function textOnChange(obj){
+   // alert(obj.value);
+    $(obj.id).attr('value', obj.value);
+      //a1 = obj.value;
+  }*/
+  function seeAns(obj){
+    
+    for(var i=0;i<ansLength;i++){
+      var id = "a" + (i+1);
+      ans[i] = $('input:text[name=' + id + "]").val();
+      //alert(ans[i]);
+      if(ans[i]!='')
+        ansCnt++;
+    }
+    if(ansCnt!=ansLength){
+      ansCnt = 0;//reset
+      alert("請填完所有答案");
+      return;
+    }
+    $('div#ansOfFilling').slideToggle('slow');
+  }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit5</a></li>
+            <li><a href="../../index.html">首頁</a></li>
+            <li><a href="../../back/background.html">背景簡介</a></li>
+            <li><a href="../../understanding/understanding.html">正文</a>
+              <ul>
+                <li><a href="../../understanding/article/articleUnit5.html">全文</a>
+                  <ul>
+                    <li><a href="../../understanding/article/translation/translationUnit5.html">翻譯</a></li>
+                    <li><a href="../../understanding/article/readloud/readloud.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../understanding/vocabulary/vocabularyUnit5.html">單字</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../quizUnit5.html">測驗</a>
+              <ul>
+                <li><a href="#">翻譯填空</a></li>
+              </ul>
+            </li>
+            <li><a href="EngFillingUnit5.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../index.html">首頁</a>-><a href="../quizUnit5.html">測驗</a>-><a href="#"><b>翻譯填空</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2>despite, in spite of, though 「儘管；雖然」</h2>
+          <h3>1. 要表達「儘管；雖然」時，常用以下詞彙:</h3>
+            <div style="background-color: #FFFFAA">
+              <font style="color:#02C874">despite</font>　　+ 　N / V-ing<br> 
+              <font style="color:#02C874">in spite of</font>　 + 　N / V-ing<br> 
+            </div>
+            <ul>
+              <li><font style="color:#02C874">Despite</font> the warning of danger from his father, Marlin, Nemo swims and is caught by a scuba diver<br>
+                (課文句子)</li>
+              <li><font style="color:#02C874">Despite</font> the cold weather, Sam still went swimming in the lake.<br>
+                = In spite of the cold weather, Sam still went swimming in the lake<br>
+                儘管天氣很冷，山姆還是去湖中游泳。</li>
+              <li>We found our way home <font style="color:#02C874">despite</font> losing our map.<br>
+                = We found our way home <font style="color:#02C874">in spite of</font> losing our map.<br>
+                儘管弄丟了地圖，我們還是找到回家的路。</li>
+            </ul>
+          <h4><font style="background-color: #D94600;color: white"><i>Tips</i></font><br>
+              1. despite與in spite of均屬介系詞，後面須接名詞或動名詞。<br>
+              2. despite, in spite of可置於句首或句中。</h4>
+          <h3>2. despite, in spite of後面不能直接接子句，若要接子句必須在子句前加the fact (that)，或者改用從屬連接詞although / though。</h3>
+            <div style="background-color: #FFFFAA">
+              <font style="color:#02C874">despite <u>the fact (that)</font></u>　　　+　子句<br>
+              <font style="color:#02C874">in spite of <u>the fact (that)</font></u>　 +　子句<br>
+              <font style="color:#02C874">although / though</font>　　　　+　子句<br>
+            </div>
+            <ul>
+              <li><font style="color:#02C874">Despite</font> <u>the fact (that)</u> it rained heavily, we still continued our soccer match.<br>
+                = <font style="color:#02C874">In spite of</font> <u>the fact (that)</u> it rained heavily, we still continued our soccer match.<br>
+                = <font style="color:#02C874">Although / Though</font> it rains heavily, we still continued our soccer match.<br>
+                儘管下著大雨，我們仍然繼續進行足球賽。
+              </li>
+            </ul>
+          <h4><font style="background-color: #D94600;color: white"><i>Tips</i></font><br>
+            1. 以上例句中the fact that皆可省略that。<br>
+            2. 上述所舉說法如despite the fact (that)等，可置於句首或句中。</h4>
+
+
+          _____________________________________________________________________________________________________________________
+
+
+
+          <h2><font style="color:#3EA99F">LET'S PRACTICE</font>  翻譯填空</h2>
+        </div>
+        <div class="question">
+          1. 雖然他頭痛，但他還是依照約定帶孩子去動物園。
+          <br>
+          <input type="text" name="a1" id="a1"></input> he had a headache, he took the kids to the zoo as he promised.
+          <br><br>
+          2. 雖然保羅脾氣不好，但他仍是個友善、明智的父親。
+          <br>
+          <input type="text" name="a2" id="a2" ></input> his bad temper, Paul is a kind and sensible father.
+          <br><br>
+        </div>
+        <br>
+        <div id="doExerciseBtn">
+          <input type="button" value="看答案" class="bTranslation" id="bDo" onclick="seeAns(this)">
+          <!--<input type="button" value="取消作答" class="bTranslation" id="bCancelDo" onclick="cancelDoExerciseClick(this)">-->
+        </div>
+        <br>
+        <div id="ansOfFilling">
+          1. <u><b>Despite the fact that ; In spite of the fact that ; Although ; Though</b></u><br><br>
+          2. <u><b>Despite ; In spite of</b></u>
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../index.html">首頁</a> | <a href="../../back/background.html">背景簡介</a> | <a href="../../understanding/understanding.html">正文</a> | <a href="../quizUnit1.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

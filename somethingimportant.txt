@@ -1,0 +1,1 @@
+ready function的內容通通寫在contructors.js, 新增或刪除內容只需改這一份即可全體適用

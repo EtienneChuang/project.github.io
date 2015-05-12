@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Reading aloud:Unit3</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function translationClick(obj){
+      //$('div#translation').html('<input type="button" id="bTranslation" value="隱藏">');
+      $('input#cancelTranslation').show();
+      $('div#translation').slideToggle('normal');
+  };
+  function canceltranslationClick(obj){
+      $('input#cancelTranslation').hide('slow');
+      $('div#translation').slideToggle('slow');
+  }
+  var lastID= "";
+  function dateUpdate(obj){
+    document.getElementById('tracktime').innerHTML = Math.floor(obj.currentTime) + ' / ' + Math.floor(obj.duration);
+    if(obj.currentTime!=1&&obj.currentTime<5){
+      if(Math.floor(obj.currentTime)==1){
+        //alert('ts');
+        $('#t1').css('color', 'red');
+        lastID = "#t1";
+      }
+    }
+    else if(obj.currentTime>6&&obj.currentTime<=11){
+      //alert('AAAAA');
+      if(Math.floor(obj.currentTime)==6){
+        $(lastID).css('color', 'black');
+        $('#t2').css('color', 'red');
+        lastID = "#t2";
+      }
+    }
+    else if(obj.currentTime>11&&obj.currentTime<=14){
+      if(Math.floor(obj.currentTime)==11){
+        $(lastID).css('color', 'black');
+        $('#t3').css('color', 'red');
+        lastID = "#t3";
+      }
+    }
+    else if(obj.currentTime>15&&obj.currentTime<=17){
+      if(Math.floor(obj.currentTime)==15){
+        $(lastID).css('color', 'black');
+        $('#t4').css('color', 'red');
+        lastID = "#t4";
+      }
+    }
+    else if(obj.currentTime>17&&obj.currentTime<=22){
+      if(Math.floor(obj.currentTime)==17){
+        $(lastID).css('color', 'black');
+        $('#t5').css('color', 'red');
+        lastID = "#t5";
+      }
+    }//************************p2
+    else if(obj.currentTime>23&&obj.currentTime<=28){
+      if(Math.floor(obj.currentTime)==23){
+        $(lastID).css('color', 'black');
+        $('#t6').css('color', 'red');
+        lastID = "#t6";
+      }
+    }
+    else if(obj.currentTime>29&&obj.currentTime<=35){
+      if(Math.floor(obj.currentTime)==29){
+        $(lastID).css('color', 'black');
+        $('#t7').css('color', 'red');
+        lastID = "#t7";
+      }
+    }
+    else if(obj.currentTime>36&&obj.currentTime<=43){
+      if(Math.floor(obj.currentTime)==36){
+        $(lastID).css('color', 'black');
+        $('#t8').css('color', 'red');
+        lastID = "#t8";
+      }
+    }
+    else if(obj.currentTime>44&&obj.currentTime<=47){
+      if(Math.floor(obj.currentTime)==44){
+        $(lastID).css('color', 'black');
+        $('#t9').css('color', 'red');
+        lastID = "#t9";
+      }
+    }
+    else if(obj.currentTime>48&&obj.currentTime<=53){
+      if(Math.floor(obj.currentTime)==48){
+        $(lastID).css('color', 'black');
+        $('#t10').css('color', 'red');
+        lastID = "#t10";
+      }
+    }
+    else if(obj.currentTime>54&&obj.currentTime<=61){
+      if(Math.floor(obj.currentTime)==54){
+        $(lastID).css('color', 'black');
+        $('#t11').css('color', 'red');
+        lastID = "#t11";
+      }
+    }
+    else if(obj.currentTime>62&&obj.currentTime<=65){
+      if(Math.floor(obj.currentTime)==62){
+        $(lastID).css('color', 'black');
+        $('#t12').css('color', 'red');
+        lastID = "#t12";
+      }
+    }
+    else if(obj.currentTime>65&&obj.currentTime<=71){
+      if(Math.floor(obj.currentTime)==65){
+        $(lastID).css('color', 'black');
+        $('#t13').css('color', 'red');
+        lastID = "#t13";
+      }
+    }//*************************************************p3
+    else if(obj.currentTime>72&&obj.currentTime<=74){
+      if(Math.floor(obj.currentTime)==72){
+        $(lastID).css('color', 'black');
+        $('#t14').css('color', 'red');
+        lastID = "#t14";
+      }
+    }
+    else if(obj.currentTime>75&&obj.currentTime<=79){
+      if(Math.floor(obj.currentTime)==75){
+        $(lastID).css('color', 'black');
+        $('#t15').css('color', 'red');
+        lastID = "#t15";
+      }
+    }
+    else if(obj.currentTime>79&&obj.currentTime<=81){
+      if(Math.floor(obj.currentTime)==79){
+        $(lastID).css('color', 'black');
+        $('#t16').css('color', 'red');
+        lastID = "#t16";
+      }
+    }
+    else if(obj.currentTime>82&&obj.currentTime<=87){
+      if(Math.floor(obj.currentTime)==82){
+        $(lastID).css('color', 'black');
+        $('#t17').css('color', 'red');
+        lastID = "#t17";
+      }
+    }
+    else if(obj.currentTime>88&&obj.currentTime<=97){
+      if(Math.floor(obj.currentTime)==88){
+        $(lastID).css('color', 'black');
+        $('#t18').css('color', 'red');
+        lastID = "#t18";
+      }
+    }//*****************************************************p4
+    else if(obj.currentTime>98&&obj.currentTime<=103){
+      if(Math.floor(obj.currentTime)==98){
+        $(lastID).css('color', 'black');
+        $('#t19').css('color', 'red');
+        lastID = "#t19";
+      }
+    }
+    else if(obj.currentTime>103&&obj.currentTime<=107){
+      if(Math.floor(obj.currentTime)==103){
+        $(lastID).css('color', 'black');
+        $('#t20').css('color', 'red');
+        lastID = "#t20";
+      }
+    }
+    else if(obj.currentTime>108&&obj.currentTime<=110){
+      if(Math.floor(obj.currentTime)==108){
+        $(lastID).css('color', 'black');
+        $('#t21').css('color', 'red');
+        lastID = "#t21";
+      }
+    }
+    else if(obj.currentTime>110&&obj.currentTime<=112){
+      if(Math.floor(obj.currentTime)==110){
+        $(lastID).css('color', 'black');
+        $('#t22').css('color', 'red');
+        lastID = "#t22";
+      }
+    }
+    else if(obj.currentTime>112&&obj.currentTime<=114){
+      if(Math.floor(obj.currentTime)==112){
+        $(lastID).css('color', 'black');
+        $('#t23').css('color', 'red');
+        lastID = "#t23";
+      }
+    }
+    else if(obj.currentTime>114&&obj.currentTime<=117){
+      if(Math.floor(obj.currentTime)==114){
+        $(lastID).css('color', 'black');
+        $('#t24').css('color', 'red');
+        lastID = "#t24";
+      }
+    }
+    else if(obj.currentTime>117&&obj.currentTime<=120){
+      if(Math.floor(obj.currentTime)==117){
+        $(lastID).css('color', 'black');
+        $('#t25').css('color', 'red');
+        lastID = "#t25";
+      }
+    }//*******************************************
+     else if(obj.currentTime>121&&obj.currentTime<=127){
+      if(Math.floor(obj.currentTime)==121){
+        $(lastID).css('color', 'black');
+        $('#t26').css('color', 'red');
+        lastID = "#t26";
+      }
+    }
+     else if(obj.currentTime>127&&obj.currentTime<=129){
+      if(Math.floor(obj.currentTime)==127){
+        $(lastID).css('color', 'black');
+        $('#t27').css('color', 'red');
+        lastID = "#t27";
+      }
+    }
+     else if(obj.currentTime>129&&obj.currentTime<=131){
+      if(Math.floor(obj.currentTime)==129){
+        $(lastID).css('color', 'black');
+        $('#t28').css('color', 'red');
+        lastID = "#t28";
+      }
+    }
+     else if(obj.currentTime>131&&obj.currentTime<=137){
+      if(Math.floor(obj.currentTime)==131){
+        $(lastID).css('color', 'black');
+        $('#t29').css('color', 'red');
+        lastID = "#t29";
+      }
+    }
+     else if(obj.currentTime>137&&obj.currentTime<=141){
+      if(Math.floor(obj.currentTime)==137){
+        $(lastID).css('color', 'black');
+        $('#t30').css('color', 'red');
+        lastID = "#t30";
+      }
+    }
+     else if(obj.currentTime>141&&obj.currentTime<=143){
+      if(Math.floor(obj.currentTime)==141){
+        $(lastID).css('color', 'black');
+        $('#t31').css('color', 'red');
+        lastID = "#t31";
+      }
+    }
+     else if(obj.currentTime>144&&obj.currentTime<=150){
+      if(Math.floor(obj.currentTime)==144){
+        $(lastID).css('color', 'black');
+        $('#t32').css('color', 'red');
+        lastID = "#t32";
+      }
+    }
+     else if(obj.currentTime>151&&obj.currentTime<=152){
+      if(Math.floor(obj.currentTime)==151){
+        $(lastID).css('color', 'black');
+        $('#t33').css('color', 'red');
+        lastID = "#t33";
+      }
+    }
+     else if(obj.currentTime>152&&obj.currentTime<=158){
+      if(Math.floor(obj.currentTime)==152){
+        $(lastID).css('color', 'black');
+        $('#t34').css('color', 'red');
+        lastID = "#t34";
+      }
+    }
+     else if(obj.currentTime>158&&obj.currentTime<=160){
+      if(Math.floor(obj.currentTime)==158){
+        $(lastID).css('color', 'black');
+        $('#t35').css('color', 'red');
+        lastID = "#t35";
+      }
+    }
+     else if(obj.currentTime>160&&obj.currentTime<=164){
+      if(Math.floor(obj.currentTime)==160){
+        $(lastID).css('color', 'black');
+        $('#t36').css('color', 'red');
+        lastID = "#t36";
+      }
+    }
+     else if(obj.currentTime>165&&obj.currentTime<=172){
+      if(Math.floor(obj.currentTime)==165){
+        $(lastID).css('color', 'black');
+        $('#t37').css('color', 'red');
+        lastID = "#t37";
+      }
+    }
+     else if(obj.currentTime>172&&obj.currentTime<=174){
+      if(Math.floor(obj.currentTime)==172){
+        $(lastID).css('color', 'black');
+        $('#t38').css('color', 'red');
+        lastID = "#t38";
+      }
+    }
+     else if(obj.currentTime>174&&obj.currentTime<=177){
+      if(Math.floor(obj.currentTime)==174){
+        $(lastID).css('color', 'black');
+        $('#t39').css('color', 'red');
+        lastID = "#t39";
+      }
+    }
+     else if(obj.currentTime>177&&obj.currentTime<=179){
+      if(Math.floor(obj.currentTime)==177){
+        $(lastID).css('color', 'black');
+        $('#t40').css('color', 'red');
+        lastID = "#t40";
+      }
+    }
+    else{
+      $(lastID).css('color', 'black');
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit3</a></li>
+            <li><a href="../../../EngIndex.html">Home</a></li>
+            <li><a href="../../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="#">Text-based section</a>
+              <ul>
+                <li><a href="../../article/EngArticleUnit3.html">Article</a>
+                  <ul>
+                    <li><a href="../translation/EngTranslationUnit3.html">Translation</a></li>
+                    <li><a href="#">Reading aloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/EngVocaUnit3.html">vocabulary</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/EngQuizUnit3.html">Monitoring section</a></li>
+            <li><a href="readloudUnit3.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h2><a href="../../../EngIndex.html">Home</a>-><a href="../../EngUnderstanding.html">Text-based section</a>-><a href="../EngArticleUnit3.html">Article</a><br>-><a href="#"><b>Reading aloud</b></a></h2>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2 class="h_title">Unit 3 : <font id="t1">Florentijn Hofman: Spreading Joy With Art</font></h2>
+        </div>
+        <div class="article">
+          <audio id="track" src="unit3.mp3" controls
+            ontimeupdate="dateUpdate(this)">
+            <p>Your browser does not support the audio element</p>
+          </audio>
+          <span id="tracktime">0 / 0</span>
+          <hr>
+          <p id='1'><font id="t2">A giant rubber duck
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>float</b> [flot] v. 漂浮 <br/><p>Boats can float if there is enough water.</p>">floated</b> 
+            into Hong Kong's Victoria Harbor this year</font>, <font id="t3">making the busy 
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>port</b> [port] n. 港口 <br/><p>The lighthouse guides all the ships to the port.</p>">port</b>
+            a huge <u>bathtub</u></font>. <font id="t4">This scene was not a first, however</font>, <font id="t5">as the Rubber Duck has been surprising cities since 2007</font>.
+          </p><!-- end of p1-->
+          <p id='2'><font id="t6">Dutch artist Florentijn Hofman is the man behind the Rubber Duck</font>. <font id="t7">His first <u>commission</u> was to paint a <u>mural</u> on 
+            the <u>cooling tower</u> of Kernwasser Wonderland in Germany</font>. <font id="t8">This 15,000-square-meter painting inspired him to continue to make large art pieces</font>. <font id="t9">Now his works can be found around the world</font>. <font id="t10">He tied 10,000 <u>sandals</u> together to create Fat Monkey in São Paulo</font>. <font id="t11">The 15-meter ape lies outdoors in a park and
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>catches the eye of</b> 引人注目 ; 引起注意 <br/><p>The actor <font style='color: #F778A1'>caught the eye of</font> the famous director when he made his first TV commercial.<br/>這位演員第一次演出電視廣告就引起著名導演的注意。">catches the eye of</font> 
+            any 
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>passer-by</b> [ˋpæsɚˋbaɪ] n. 路人 ; 經過的人 (複數為passers-by) <br/> <p>The salesman tried to start conversations with every passer-by</p>">passer-by</b></font>.
+            <font id="t12">The artist also created Big Yellow Rabbit</font>, <font id="t13">which
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>be made...</b> 由...製成 / 組成的 <br/>">is made of</font>
+            thousands of roof <u>shingles</u> and is in Örebro, Sweden</font>.
+          </p><!-- end of p2-->
+          <p id='3'>
+            <font id="t14"><b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>Unlike</b> [ʌnˋlaɪk] prep. 不像 ; 和...不同<br/><b><font style='background-color: #AECBEB'>like</font></b> prep. 像 ; 和...相同 <p>She caught a cold so her voice was quite unlike her usual one.</p>">Unlike</b>
+            many modern artists</font>, <font id="t15">Hofman chooses everyday subjects that everyone can recognize</font>, <font id="t16">especially animals</font>. <font id="t17">These large cartoon-like creations always get a lot of
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>attention</b> [əˋtɛnʃən] n. 注意 <br/> <p>Lucy enjoyed the speech and paid attention to every word.</p>">attention</b></font>.
+            <font id="t18">He feels that their cute appearance and giant size can bring people happiness and
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>remind</b> [rɪˋmaɪnd] v. 使想起 ; 提醒 <br/> <p>The weather reporter reminded everyone to carry their umbrellas.</p>">remind</b>
+            them of their childhood</font>. 
+          </p><!--end of p3-->
+          <p id='4'><font id="t19">Although Hofman's large and colorful creations have a
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>playful</b> [ˋplefəl] n. adj. 開玩笑的 ; 愛玩的 <br/> <p>Young dogs often fight with each other in a playful way.</p>">playful</b> 
+            quality</font>, <font id="t20">the artist has a serious attitude about his work</font>. <font id="t21">He says that his art</font>, <font id="t22">like the Rubber Duck</font>, <font id="t23">is make for the public</font>. <font id="t24">Several companies offered to buy the duck</font>, <font id="t25">but Hofman rejected them all</font>.
+          </p><!-- end of p4-->
+          <p id='5'><font id="t26">When Hofman travels around the world to create huge animal art</font>, <font id="t27">he likes to make it locally</font>. <font id="t28">He uses local
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>materials</b> [məˋtɪrɪəl] n. 材料 <br/><p>Clothes made out of materials like cotton are soft and comfortable.</p>">materials</b>
+            </font>, <font id="t29">and <u>enlists</u> local artists and
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>volunteers</b> [͵vɑlənˋtɪr] n. 義工 ; 志願者 <br/> <p>A group of volunteers cleaned up the dirty beach on the weekend.</p>">volunteers</b>
+            to help him and his team</font>. <font id="t30">Once the art is put on public display</font>, <font id="t31">people often stop to view it</font>. <font id="t32">Many say his art makes it easier to start conversations with other <u>onlookers</u></font>. <font id="t33">As a result</font>, <font id="t34">Hofman's art helps strangers to make contact with each other again</font>.
+          </p><!-- end of p5-->
+          <p id='6'><font id="t35">For Hofman</font>, <font id="t36">the audiences'
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>reaction</b> [rɪˋækʃən] n. 反應 ; 回應 <br/><b><font style='background-color: #AECBEB'>react</font></b> v. 反應<p>The child's reaction to the scary movie was to scream and cry</p>">reaction</b>
+            is an essential part of his work</font>. <font id="t37">He 
+            <b id='v10'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>invite</b> [ɪnˋvaɪt] v. 邀請<br/>(invite-invited-invited)<p>Joe invited the girl he likes to go out on a date with him.</p>">invites</b>
+            the public to
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>reconsider</b> [͵rikənˋsɪdɚ] v. 重新思考 ; 再斟酌 <br/><b><font style='background-color: #AECBEB'>consider</font></b> v. 考慮 ; 細想 <p>Once the stubborn boss makes a decision, he never reconsiders.</p>">reconsider</b>
+            things that appear to be
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>a matter of course</b> 理所當然的事 <br/><p>You are expected to make your own bed as <font style='color: #F778A1'>a matter of course</font>.<br/>你理所當然地應該要自己鋪床。">a matter of course</font>
+            at first</font>. <font id="t38">His purpose is simple</font>: <font id="t39">to give people a break from their daily lives</font>, <font id="t40">and make them smile</font>.
+          </p><!-- end of p5-->
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../EngIndex.html">Home</a> | <a href="../../../back/EngBackground.html">Introductory section</a> | <a href="../../EngUnderstanding.html">Text-based section</a> | <a href="../../../quiz/EngQuizUnit3.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

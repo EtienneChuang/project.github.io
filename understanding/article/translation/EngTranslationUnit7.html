@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Translation:Unit7</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function translationClick(obj){
+      //$('div#translation').html('<input type="button" id="bTranslation" value="隱藏">');
+      $('input#cancelTranslation').show();
+      $('div#translation').slideToggle('normal');
+  };
+  function canceltranslationClick(obj){
+      $('input#cancelTranslation').hide('slow');
+      $('div#translation').slideToggle('slow');
+  }
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit7</a></li>
+            <li><a href="../../../EngIndex.html">Home</a></li>
+            <li><a href="../../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="../../EngUnderstanding.html">Text-based section</a>
+              <ul>
+                <li><a href="../../article/EngArticleUnit7.html">Article</a>
+                  <ul>
+                    <li><a href="#">Translation</a></li>
+                    <li><a href="../readloud/EngReadloudUnit7.html">Reading aloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/EngVocaUnit7.html">Vocabulary</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/EngQuizUnit7.html">Monitoring section</a></li>
+            <li><a href="translationUnit7.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>	
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h2><a href="../../../EngIndex.html">Home</a>-><a href="../../EngUnderstanding.html">Text-based section</a>-><a href="../EngArticleUnit7.html">Article</a><br>-><a href="#"><b>Translation</b></a></h2>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 200px'>
+
+        </div>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>
+          <h2 class="h_title">Unit 7 : Nature's Keepers</h2>
+        </div>
+        <div class="article">
+          <p id='1'>Bulgaria, in Southeastern Europe, is home to many nationally loved animals like bears, 
+            <u id='a1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>stork</b> [stɔrk] <br>n. 鸛<br> ">storks</u>, and 
+            <u id='a2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>vulture</b> [ˋvʌltʃɚ] <br>n. 禿鷹<br>">vultures</u>.<br>
+            位於歐洲東南部的保加利亞是熊、鸛及禿鷹等許多受全國喜愛的動物所在地。<br><br>
+            However, these animals have been
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>mistreat</b> [mɪsˋtrit]  v. 虐待 <br/><p>The dog was mistreated and almost died because its owner never fed it.</p>">mistreated</b>
+            over the years.<br>
+            然而，這些動物多年來被不當地對待。<br><br>
+            Fortunately, there are many efforts to
+            <b id='v2' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>preserve</b> [prɪˋzɝv] v. 保育 ; 維護 <br/>(preserve-preserved-preserved)<p>The government should preserve this forest because many animals live here.</p>">preserve</b>
+            these species.<br>
+            幸虧，有許多人努力保護這些物種，<br><br>
+            Discovery's <i>Nature's Keepers</i> lets us explore how 
+            <u id='a3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>conservationist</b> [͵kɑnsɚˋveʃənɪst] <br>n. 保育人士<br>">conservationists</u> are protecting nature in Bulgaria.<br>
+            探索頻道的《守護大自然》讓我們探究保育人士們是如何保護保加利亞的自然生態。<br><br>
+          </p><!-- end of p1-->
+          <p id='2'>The brown bear is one of Europe's largest 
+            <u id='a4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>predators</b> [ˋprɛdətɚ] <br>n. 掠食者<br>">predators</u>.<br>
+            棕熊是歐洲最大的掠食者之一。<br><br>
+            In the past,<br>
+            在過去，<br><br>
+            the animal was used for
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>entertainment</b> [͵ɛntɚˋtenmənt] n. 娛樂 <br/><b><font style='background-color: #AECBEB'>entertain</font></b> v. 娛樂<br/><p>On weekends, I often watch movies for entertainment.</p>">entertainment</b>
+            at the circus.<br>
+            這種動物在馬戲團被做為娛樂用途。<br><br>
+            This no longer occurs,<br>
+            這現象不再發生，<br><br>
+            but the bears have lost a lot of their natural
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>instinct</b> [ˋɪnstɪŋkt] n. 本能 ; 天性 <br/> <p>Mothers have a natural instinct to protect their children.</p>">instincts</b>
+            and confidence.但這些熊已大量失去他們的天性和自信。<br><br>
+            <i>Nature's keepers</i> follows a small conservation team in a park which 
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>provide, supply, offer</b> 供應 <br/>">provides</font> 
+            a last
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>refuge</b> [ˋrɛfjudʒ] n. 庇護 ; 躲避 <br/> <p>When it started raining heavily, we took refuge under a tree.</p>">refuge</b>
+            for these "dancing bears" of Bulgaria.<br>
+            《守護大自然》跟隨一個保育團隊到一座公園，這裡提供這些保加利亞「跳舞熊」一個最後的收容所。<br><br>
+            The team helps the bears restore their body clock by encouraging 
+            <u id='a5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>hibernation</b> [͵haɪbɚˋneʃən] <br>n. 冬眠<br>">hibernation</u>.<br>
+            這個團隊以助長冬眠來幫牠們恢復生理時鐘<br><br>
+            They also 
+            <u id='a6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>simulate</b> [ˋsɪmjə͵let] <br>v. 模擬<br>">simulate</u> wild conditions by placing food in wooden tunnel,<br>
+            並藉由將食物放進木製通道來模擬野外的環境條件，<br><br>
+            forcing the bears to
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>obtain</b> [əbˋten] v.取得 <br/> <p>Taiwanese people don't need to obtain a travel visa to visit the US anymore.</p>">obtain</b>
+            it on their own.<br>
+            迫使熊自己去取得食物。<br><br>
+            This helps the bears learn how to live in the wild.<br>
+            這幫助這些熊學習如何在野外生存。<br><br>
+            Bulgaria adores its bears,
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>to say the least</b> 至少可以這樣說 <br/><p>Taiwan is a crowded country, <font style='color: #F778A1'>to say the least</font>.<br/>台灣是個擁擠的國家，至少可以這樣說。">to say the least</font>,<br>
+            保加利亞至少可說是敬愛他們的熊，<br><br>
+            but also has concerns about other species.<br>
+            但也關注其他的物種。<br><br>
+          </p><!-- end of p2-->
+          <p id='3'>A wild bird refuge center in the south of Bulgaria receive over 1,200 birds each year.<br>
+            在保加利亞南方的一家野生鳥類收容中心每年接收超過一千兩百隻鳥。<br><br>
+            Some 90 percent of them are brought to the center after being found near the road.<br>
+            百分之九十的鳥在路邊被發現後被帶到此收容中心。<br><br>
+            One of the main birds at the center is the stork,<br>
+            其中主要的鳥類是鸛，<br><br>
+            which
+            <b id='v7'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>represents</b> [͵rɛprɪˋzɛnt] v. 表示 ; 象徵<br/><p>The white dove on the poster represents peace.</p>">represents</b>
+            good luck to the people of Bulgaria.<br>
+            牠對保加利亞的人們來說代表好運。<br><br>
+            However,<br>
+            然而，<br><br>
+            storks are sometimes the
+            <b id='v8'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>victim</b> [ˋvɪktɪm] n.受害者 ; 犧牲者<br/><p>Victims of the earthquake had to search for new homes.</p>">victims</b>
+            of 
+            <u id='a7'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>high-voltage</b> [ˋvoltɪdʒ] <br>adj. 高電壓的<br>">high-voltage</u> electrical wires and arrive at the center as patients.<br>
+            鸛有時候因高壓電纜而成為收容中心的病患。<br><br>
+            Luckily, there are many caring and responsible
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>volunteer</b> [͵vɑlənˋtɪr] n. 義工 ; 志願者<br/><p>The volunteers plan to go to Ethiopia and build houses for poor people.</p>">volunteers</b>
+            who use all their energy and skills to save the birds.<br>
+            幸運的是有許多有愛心及責任心的義工盡他們所能拯救這些鳥。<br><br>
+          </p><!--end of p3-->
+          <p id='4'>The animal lovers in Bulgaria also
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>pay attention to</b> 注意 <br/><p>A good driver has to <font style='color: #F778A1'>pay attention to</font> other cars on the road.<br/>一位優良駕駛必須注意路上的其他車輛。">pay attention to</font>
+            rescuing the 
+            <u id='a8'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>endangered</b> [ɪnˋdendʒɚd]<br>adj. 快絕種的<br>">endangered</u> vulture.<br>
+            保加利亞的動物愛好者也關注於拯救即將絕種的禿鷹。<br><br>
+            Many hunters used to see the bird as a
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>pest</b> [pɛst] n. 害蟲 ; 有害的動(植)物 <br/> <p>These pests keep eating the farmer's plants.</p>">pest</b>,<br>
+            許多獵人曾視這種鳥為一種有害的動物，<br><br>
+            as it ate dead animals,<br>
+            因為牠吃其他動物的屍體，<br><br>
+            but it actually helps clean up the 
+            <u id='a9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>landscape</b> [ˋlænd͵skep] <br>n. 景色<br>">landscape</u> and prevents the spread of 
+            <u id='a10'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>infectious</b> [ɪnˋfɛkʃəs] <br>adj. 傳染的<br>">infectious</u> diseases.<br>
+            但它其實有助於美化景觀及預防傳染病的蔓延。<br><br>
+            So, now the nation is keeping this special bird safe from harm and helping it
+            <b id='v11' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>breed</b> [brid] v. 繁殖 <br/>(breed-bred-bred)<p>If our dogs breed, I bet their puppies will be very cute.</p>">breed</b>
+            at a
+            <b id='v12' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>stable</b> [ˋsteb!] adj. 穩定的 <br/> <p>Vegetable prices have been stable because there haven't been any natural disasters lately.</p>">stable</b>
+            rate.<br>
+            因此，這個國家正在力保這種特殊的鳥類安全，不受到傷害，並助其以穩定的速率繁殖。<br><br>
+            Bulgaria's great effort to protect its beloved animals gives them a great chance to live on.<br>
+            保加利亞對保護牠們所愛動物做的努力給予牠們很大的機會生存。<br><br>
+          </p><!-- end of p4-->
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../EngIndex.html">Home</a> | <a href="../../../back/EngBackground.html">Introductory section</a> | <a href="../../EngUnderstanding.html">Text-based section</a> | <a href="../../../quiz/EngQuizUnit7.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

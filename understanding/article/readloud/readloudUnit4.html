@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>朗讀:Unit4</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function translationClick(obj){
+      //$('div#translation').html('<input type="button" id="bTranslation" value="隱藏">');
+      $('input#cancelTranslation').show();
+      $('div#translation').slideToggle('normal');
+  };
+  function canceltranslationClick(obj){
+      $('input#cancelTranslation').hide('slow');
+      $('div#translation').slideToggle('slow');
+  }
+  var lastID= "";
+  function dateUpdate(obj){
+    document.getElementById('tracktime').innerHTML = Math.floor(obj.currentTime) + ' / ' + Math.floor(obj.duration);
+    if(obj.currentTime!=0&&obj.currentTime<3){
+      if(Math.floor(obj.currentTime)==0){
+        //alert('ts');
+        $('#t1').css('color', 'red');
+        lastID = "#t1";
+      }
+    }
+    else if(obj.currentTime>4&&obj.currentTime<=7){
+      //alert('AAAAA');
+      if(Math.floor(obj.currentTime)==4){
+        $(lastID).css('color', 'black');
+        $('#t2').css('color', 'red');
+        lastID = "#t2";
+      }
+    }
+    else if(obj.currentTime>7&&obj.currentTime<=14){
+      if(Math.floor(obj.currentTime)==7){
+        $(lastID).css('color', 'black');
+        $('#t3').css('color', 'red');
+        lastID = "#t3";
+      }
+    }
+    else if(obj.currentTime>14&&obj.currentTime<=18){
+      if(Math.floor(obj.currentTime)==14){
+        $(lastID).css('color', 'black');
+        $('#t4').css('color', 'red');
+        lastID = "#t4";
+      }
+    }
+    else if(obj.currentTime>18&&obj.currentTime<=23){
+      if(Math.floor(obj.currentTime)==18){
+        $(lastID).css('color', 'black');
+        $('#t5').css('color', 'red');
+        lastID = "#t5";
+      }
+    }//************************p2
+    else if(obj.currentTime>23&&obj.currentTime<=29){
+      if(Math.floor(obj.currentTime)==23){
+        $(lastID).css('color', 'black');
+        $('#t6').css('color', 'red');
+        lastID = "#t6";
+      }
+    }
+    else if(obj.currentTime>29&&obj.currentTime<=31){
+      if(Math.floor(obj.currentTime)==29){
+        $(lastID).css('color', 'black');
+        $('#t7').css('color', 'red');
+        lastID = "#t7";
+      }
+    }
+    else if(obj.currentTime>31&&obj.currentTime<=35){
+      if(Math.floor(obj.currentTime)==31){
+        $(lastID).css('color', 'black');
+        $('#t8').css('color', 'red');
+        lastID = "#t8";
+      }
+    }
+    else if(obj.currentTime>35&&obj.currentTime<=42){
+      if(Math.floor(obj.currentTime)==35){
+        $(lastID).css('color', 'black');
+        $('#t9').css('color', 'red');
+        lastID = "#t9";
+      }
+    }
+    else if(obj.currentTime>42&&obj.currentTime<=44){
+      if(Math.floor(obj.currentTime)==42){
+        $(lastID).css('color', 'black');
+        $('#t10').css('color', 'red');
+        lastID = "#t10";
+      }
+    }
+    else if(obj.currentTime>44&&obj.currentTime<=45){
+      if(Math.floor(obj.currentTime)==44){
+        $(lastID).css('color', 'black');
+        $('#t11').css('color', 'red');
+        lastID = "#t11";
+      }
+    }
+    else if(obj.currentTime>46&&obj.currentTime<=51){
+      if(Math.floor(obj.currentTime)==46){
+        $(lastID).css('color', 'black');
+        $('#t12').css('color', 'red');
+        lastID = "#t12";
+      }
+    }
+    else if(obj.currentTime>51&&obj.currentTime<=52){
+      if(Math.floor(obj.currentTime)==51){
+        $(lastID).css('color', 'black');
+        $('#t13').css('color', 'red');
+        lastID = "#t13";
+      }
+    }//*************************************************p3
+    else if(obj.currentTime>52&&obj.currentTime<=53){
+      if(Math.floor(obj.currentTime)==52){
+        $(lastID).css('color', 'black');
+        $('#t14').css('color', 'red');
+        lastID = "#t14";
+      }
+    }
+    else if(obj.currentTime>54&&obj.currentTime<=62){
+      if(Math.floor(obj.currentTime)==54){
+        $(lastID).css('color', 'black');
+        $('#t15').css('color', 'red');
+        lastID = "#t15";
+      }
+    }
+    else if(obj.currentTime>62&&obj.currentTime<=66){
+      if(Math.floor(obj.currentTime)==62){
+        $(lastID).css('color', 'black');
+        $('#t16').css('color', 'red');
+        lastID = "#t16";
+      }
+    }
+    else if(obj.currentTime>66&&obj.currentTime<=72){
+      if(Math.floor(obj.currentTime)==66){
+        $(lastID).css('color', 'black');
+        $('#t17').css('color', 'red');
+        lastID = "#t17";
+      }
+    }
+    else if(obj.currentTime>72&&obj.currentTime<=79){
+      if(Math.floor(obj.currentTime)==72){
+        $(lastID).css('color', 'black');
+        $('#t18').css('color', 'red');
+        lastID = "#t18";
+      }
+    }//*****************************************************p4
+    else if(obj.currentTime>79&&obj.currentTime<=84){
+      if(Math.floor(obj.currentTime)==79){
+        $(lastID).css('color', 'black');
+        $('#t19').css('color', 'red');
+        lastID = "#t19";
+      }
+    }
+    else if(obj.currentTime>85&&obj.currentTime<=89){
+      if(Math.floor(obj.currentTime)==85){
+        $(lastID).css('color', 'black');
+        $('#t20').css('color', 'red');
+        lastID = "#t20";
+      }
+    }
+    else if(obj.currentTime>90&&obj.currentTime<=96){
+      if(Math.floor(obj.currentTime)==90){
+        $(lastID).css('color', 'black');
+        $('#t21').css('color', 'red');
+        lastID = "#t21";
+      }
+    }
+    else if(obj.currentTime>96&&obj.currentTime<=99){
+      if(Math.floor(obj.currentTime)==96){
+        $(lastID).css('color', 'black');
+        $('#t22').css('color', 'red');
+        lastID = "#t22";
+      }
+    }
+    else if(obj.currentTime>99&&obj.currentTime<=102){
+      if(Math.floor(obj.currentTime)==99){
+        $(lastID).css('color', 'black');
+        $('#t23').css('color', 'red');
+        lastID = "#t23";
+      }
+    }
+    else if(obj.currentTime>102&&obj.currentTime<=103){
+      if(Math.floor(obj.currentTime)==102){
+        $(lastID).css('color', 'black');
+        $('#t24').css('color', 'red');
+        lastID = "#t24";
+      }
+    }
+    else if(obj.currentTime>103&&obj.currentTime<=110){
+      if(Math.floor(obj.currentTime)==103){
+        $(lastID).css('color', 'black');
+        $('#t25').css('color', 'red');
+        lastID = "#t25";
+      }
+    }//*******************************************
+     else if(obj.currentTime>110&&obj.currentTime<=116){
+      if(Math.floor(obj.currentTime)==110){
+        $(lastID).css('color', 'black');
+        $('#t26').css('color', 'red');
+        lastID = "#t26";
+      }
+    }
+     else if(obj.currentTime>116&&obj.currentTime<=119){
+      if(Math.floor(obj.currentTime)==116){
+        $(lastID).css('color', 'black');
+        $('#t27').css('color', 'red');
+        lastID = "#t27";
+      }
+    }
+     else if(obj.currentTime>119&&obj.currentTime<=120){
+      if(Math.floor(obj.currentTime)==119){
+        $(lastID).css('color', 'black');
+        $('#t28').css('color', 'red');
+        lastID = "#t28";
+      }
+    }
+     else if(obj.currentTime>120&&obj.currentTime<=121){
+      if(Math.floor(obj.currentTime)==120){
+        $(lastID).css('color', 'black');
+        $('#t29').css('color', 'red');
+        lastID = "#t29";
+      }
+    }
+     else if(obj.currentTime>122&&obj.currentTime<=124){
+      if(Math.floor(obj.currentTime)==122){
+        $(lastID).css('color', 'black');
+        $('#t30').css('color', 'red');
+        lastID = "#t30";
+      }
+    }
+     else if(obj.currentTime>124&&obj.currentTime<=128){
+      if(Math.floor(obj.currentTime)==124){
+        $(lastID).css('color', 'black');
+        $('#t31').css('color', 'red');
+        lastID = "#t31";
+      }
+    }
+     else if(obj.currentTime>128&&obj.currentTime<=132){
+      if(Math.floor(obj.currentTime)==128){
+        $(lastID).css('color', 'black');
+        $('#t32').css('color', 'red');
+        lastID = "#t32";
+      }
+    }
+     else if(obj.currentTime>132&&obj.currentTime<=136){
+      if(Math.floor(obj.currentTime)==132){
+        $(lastID).css('color', 'black');
+        $('#t33').css('color', 'red');
+        lastID = "#t33";
+      }
+    }
+     else if(obj.currentTime>136&&obj.currentTime<=140){
+      if(Math.floor(obj.currentTime)==136){
+        $(lastID).css('color', 'black');
+        $('#t34').css('color', 'red');
+        lastID = "#t34";
+      }
+    }
+     else if(obj.currentTime>140&&obj.currentTime<=145){
+      if(Math.floor(obj.currentTime)==140){
+        $(lastID).css('color', 'black');
+        $('#t35').css('color', 'red');
+        lastID = "#t35";
+      }
+    }
+     else if(obj.currentTime>145&&obj.currentTime<=147){
+      if(Math.floor(obj.currentTime)==145){
+        $(lastID).css('color', 'black');
+        $('#t36').css('color', 'red');
+        lastID = "#t36";
+      }
+    }
+     else if(obj.currentTime>147&&obj.currentTime<=149){
+      if(Math.floor(obj.currentTime)==147){
+        $(lastID).css('color', 'black');
+        $('#t37').css('color', 'red');
+        lastID = "#t37";
+      }
+    }
+     else if(obj.currentTime>149&&obj.currentTime<=151){
+      if(Math.floor(obj.currentTime)==149){
+        $(lastID).css('color', 'black');
+        $('#t38').css('color', 'red');
+        lastID = "#t38";
+      }
+    }
+     else if(obj.currentTime>151&&obj.currentTime<=154){
+      if(Math.floor(obj.currentTime)==151){
+        $(lastID).css('color', 'black');
+        $('#t39').css('color', 'red');
+        lastID = "#t39";
+      }
+    }
+     else if(obj.currentTime>154&&obj.currentTime<=159){
+      if(Math.floor(obj.currentTime)==154){
+        $(lastID).css('color', 'black');
+        $('#t40').css('color', 'red');
+        lastID = "#t40";
+      }
+    }
+    else if(obj.currentTime>159&&obj.currentTime<=165){
+      if(Math.floor(obj.currentTime)==159){
+        $(lastID).css('color', 'black');
+        $('#t41').css('color', 'red');
+        lastID = "#t41";
+      }
+    }
+    else if(obj.currentTime>165&&obj.currentTime<=167){
+      if(Math.floor(obj.currentTime)==165){
+        $(lastID).css('color', 'black');
+        $('#t42').css('color', 'red');
+        lastID = "#t42";
+      }
+    }
+    else{
+      $(lastID).css('color', 'black');
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit4</a></li>
+            <li><a href="../../../index.html">首頁</a></li>
+            <li><a href="../../../back/background.html">背景簡介</a></li>
+            <li><a href="#">正文</a>
+              <ul>
+                <li><a href="../../article/articleUnit4.html">全文</a>
+                  <ul>
+                    <li><a href="../translation/translationUnit4.html">翻譯</a></li>
+                    <li><a href="#">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/vocabularyUnit4.html">單字</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/quizUnit4.html">測驗</a></li>
+            <li><a href="EngReadloudUnit4.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../../index.html">首頁</a>-><a href="../../understanding.html">正文</a>-><a href="../articleUnit4.html">全文</a><br>-><a href="#"><b>全文朗讀</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2 class="h_title">Unit 4 : <font id="t1">Sweeten Up Your Sweetheart</font></h2>
+        </div>
+        <div class="article">
+          <audio id="track" src="unit4.mp3" controls
+            ontimeupdate="dateUpdate(this)">
+            <p>Your browser does not support the audio element</p>
+          </audio>
+          <span id="tracktime">0 / 0</span>
+          <hr>
+          <p id='1'><font id="t2">Valentine's Day is
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>around the corner</b> 即將來臨 <br/><p>Winter is just <font style='color: #F778A1'>around the corner</font>, so it's good to prepare by buying warm clothes.<br/>冬天快要到了，該買些保暖衣物來準備過冬了。">around the corner</font></font>
+            , <font id="t3">which means it's time for you to enjoy a romantic meal with that special someone</font>.
+            <font id="t4"><b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>A spot of</b> [spɑt] phr. 少量的 <br/><p>The cook usually makes her pasta special by adding a spot of spicy sause.</p>">A spot of</b>
+            sugar can <u>pave the way</u> for romance</font>, <font id="t5">so why not make every meal complete with a tasty treat</font>? <font id="t6">Here are two desserts that are
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>guarantee</b> [͵gærənˋti] v. 保證 <br/>(guarantee-guarateed-guarateed)<br/><p>The salesman guaranteed that his product would never need repairs.</p>">guaranteed</b>
+            to satisfy your sweet tooth</font>.
+          </p><!-- end of p1-->
+          <p id='2'><font id="t7">For brunch or afternoon tea</font>, <font id="t8">you can
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>indulge</b> [ɪnˋdʌldʒ] v. 享受一下 ; 沉迷 <br/>(indulge-indulged-indulged)<br/><p>If you are trying to be healthier, you must not indulge in sweet or oily foods.</p>">indulge</b>
+            in a Liège waffles</font>. <font id="t9">These waffles are made of <u>dough</u> and baked with sugar on the outside to make them sweeter</font>. <font id="t10">They also have a rich</font>, <font id="t11">chewy <u>texture</u></font>. <font id="t12">You can make waffles more delicious by decorating them with fruits</font>, <font id="t13">chocolate</font>, <font id="t14">or ice cream</font>. <font id="t15">The smell of a fresh waffle is so <u>tempting</u> that you can't
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>resist</b> [rɪˋzɪst] v. 抗拒 ; 抵抗 <br/> <p>It's difficult to resist accepting free gifts from others.</p>">resist</b>
+            sharing one with your sweetheart</font>.
+          </p><!-- end of p2-->
+          <p id='3'>
+            <font id="t16">It's said that Asians are very
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>visual</b> [ˋvɪʒuəl] adj. 視覺的<br/><p>A visual learner understands best by seeing picture as well as words.</p>">visual</b>
+            eaters</font>, <font id="t17">so it's no surprise that waffles are becoming popular in Asia</font>. <font id="t18">This explains why waffles in Taiwan are visually <u>stunning</u> and bursting with flavor</font>,
+            <font id="t19"><font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>so that</b> 以便於... ; 為了... ; 所以...">so that</font>
+            they
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>appeal</b> [əˋpil] v. 投...所好 ; 使...感興趣 <br/> <p>The cellphone with an HD screen appeals to fans of movies and video games.</p>">appeal</b>
+            to the eye just as much as the <u>taste buds</u></font>. <font id="t20">A waffle date is a great way to spend this romantic holiday</font>!
+          </p><!--end of p3-->
+          <p id='4'><font id="t21">Is there a better <u>finale</u> to your Valentine's Day that a <u>candlelit dinner</u></font>? <font id="t22">You can finish off with a chocolate 
+            <u>fondue</u></font> - <font id="t23">a pot of melted chocolate</font>. <font id="t24">To eat</font>, <font id="t25">you put a piece of fruit or
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>pastry</b> [ˋpestrɪ] n. 酥皮點心 ; 糕點 <br/> <p>For breakfast, Daniel and Allie bought some fresh pastries from the bakery.</p>">pastry</b>
+            onto a stick then
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>dip</b> [dɪp] v. 沾 ; 浸 <br/>(dip-dipped-dipped)<p>Lily dipped her toes in the pool to test the temperature of the water.</p>">dip</b>
+            it in the fondue</font>. <font id="t26">You can try dipping cookies or even ice cream into the pot</font>. <font id="t27">Whatever you put in comes out hot</font>,
+            <font id="t28">
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>sticky</b> [ˋstɪkɪ] adj. 黏稠的 <br/> <p>Max used a sticky gel to make his hair stand up and look cool.</p>">sticky</b></font>
+            , <font id="t29">and mouth-watering</font>.
+          </p><!-- end of p4-->
+          <p id='5'><font id="t30">Fondues were invented in Switzerland</font>, <font id="t31">where the Swiss
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>originally</b> [əˋrɪdʒən!ɪ] adv. 最初 ; 本來<br/><b><font style='background-color: #AECBEB'>original</font></b>adj. 最初的 ; 本來的<br/><p>The museum was originally an army base built during the war.</p>">originally</b>
+            used melted cheese</font>. <font id="t32">They also
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>come up with</b> 想出 ; 提供 <br/><p>Inventors <font style='color: #F778A1'>come up with</font> great ideas and try to make them real.<br/>發明家想出了許多絕佳的點子，並且嘗試讓它們成真。">came up with</font>
+            some fondue <u>etiquette</u></font>. <font id="t33">The rules say it's
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>impolite</b> [͵ɪmpəˋlaɪt] adj. 無禮的 <br/><b><font style='background-color: #AECBEB'>polite</font></b> adj. 有禮貌的<br/> <p>The impolite man talked loudly while riding a public bus.</p>">impolite</b>
+            to "double dip,"</font> <font id="t34">which means to put something into the pot a second time</font>. <font id="t35">You must also be careful not to drop anything into the pot</font>. <font id="t36">If the man does it</font>, <font id="t37">he must pay for the meal</font>. <font id="t38">But if the woman does it</font>, <font id="t39">she has to kiss everyone at the table</font>!
+          </p><!-- end of p5-->
+          <p id='6'><font id="t40">Valentine's Day is a perfect time to sweeten up your sweetheart</font>. <font id="t41">A Liège waffles or a chocolate fondue will
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>certainly</b> [ˋsɝtənlɪ] adv. 無疑地 ; 必定 <br/><b><font style='background-color: #AECBEB'>certain</font></b> adj. 確實 ; 必然<p>Thomas promised to come to our party, so he will certainly be here soon.</p>">certainly</b>
+            melt in your mouth</font>, <font id="t42">and melt your Valentine's heart as well</font>.
+          </p><!-- end of p5-->
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../index.html">首頁</a> | <a href="../../../back/background.html">背景簡介</a> | <a href="../../understanding.html">正文</a> | <a href="../../../quiz/quizUnit4.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

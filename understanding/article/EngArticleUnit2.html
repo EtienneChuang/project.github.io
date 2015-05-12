@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Article:Unit2</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+   function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    //alert('x:'+x+', y:'+y); 
+    $(obj).css('color', 'red');
+
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+    //vd.innerHTML = "";
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit2</a></li>
+            <li><a href="../../EngIndex.html">Home</a></li>
+            <li><a href="../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="../EngUnderstanding.html">Text-based section</a>
+              <ul>
+                <li><a href="#">Article</a>
+                  <ul>
+                    <li><a href="translation/EngTranslationUnit2.html">Translation</a></li>
+                    <li><a href="readloud/EngReadloudUnit2.html">Reading aloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../vocabulary/EngVocaUnit2.html">Vocabulary</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../quiz/EngQuizUnit2.html">Monitoring section</a></li>
+            <li><a href="articleUnit2.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>	
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h1><a href="../../EngIndex.html">Home</a>-><a href="../EngUnderstanding.html">Introductory section</a>-><a href="#"><b>Article</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!--
+        <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        <hr>
+        <br>
+        <div class="sidebar" id="vocaDisplay" style="height: 200px">
+        </div>
+        <hr>-->
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 150px; padding-left:10px;padding-top:5px'>
+
+        </div>
+        <hr>
+        <p>
+          <font style="color: #E93EFF">1. 導盲犬(Guide Dogs) :</font><br>
+          服務族群為視障人士，替主人提供行動協助。<br>
+          多數用犬為拉不拉多、黃金獵犬及德國牧羊犬。
+        </p>
+        <img src="../../images/dog1.jpg">
+        </img>
+        <p>
+          <font style="color: #E93EFF">2. 導聾犬(Hearing Dogs) :</font><br>
+          服務族群為聽障人士，能為主人提供聲音來源提示及警示。<br>
+          無特殊犬種限制，通常為小型到中型的混種犬。
+        </p>
+        <img src="../../images/dog2.jpg">
+        </img>
+        <p>
+          <font style="color: #E93EFF">3. 肢障輔助犬(Service Dogs) :</font><br>
+          服務範圍較廣，主要協助行動不變或使用輪椅的肢障人士，提供日常生活中各式協助以促進生活機能。<br>
+          使用犬隻大多為黃金獵犬或拉不拉多。
+        </p>
+        <img src="../../images/dog3.jpg">
+        </img>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <!--<h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>-->
+          <h2 class="h_title">Unit 2 : Dogs Are More Than Man's Best Friend</h2>
+        </div>
+        <div class="article">
+          <p id='1'>An
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>assistance</b> [əˋsɪstəns] n. 援助 ; 幫助 <br/><b><font style='background-color: #AECBEB'>assist</font></b> v. 協助 ; 幫助 <p>I need some assistance to move this big piano.</p>">assistance</b> 
+            dog isn't just a pet: it can be the eyes, ears, friend, and 
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>companion</b>  [kəmˋpænjən] n. 同伴 ; 朋友 <br/><b><font style='background-color: #AECBEB'>company</font></b> n. 陪伴 ; 伙伴  <p>The old lady has a cat as her companion so that she doesn't feel lonely.</p>">companion</b>
+            of a <u id="a1"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>disabled</b> [dɪsˋeb!d] <br>adj. 殘廢的；有缺陷的 <br/>">disabled</u> person. When most people hear about assistance dogs, they usually think of guide dogs. These dogs lead people who are  
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>blind</b> [blaɪnd] adj. 失明的 ; 盲的 <br/> <p>Blind men usually hold a long stick to keep from running into things.</p>">blind</b>, especially in busy or dangerous public places, and help give them back their independence.
+          </p><!-- end of p1-->
+          <p id='2'>Hearing dogs perform a similar function, but for people who are
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>deaf</b> [dɛf] adj. 聾的 <br/> <p>You'll have to be patiend with deaf people because they can't hear what you say.</p>">deaf</b>. Owners of hearing dogs say they feel safer and
+            <u id="a2"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>secure</b> [sɪˋkjʊr] <br>adj. 安全的；無慮的 <br/>">secure</u> with the help of their trained dog. What's more, hearing dogs can
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>alert</b>  [əˋlɝt] v. 使警覺 <br/> <p>The smell of smoke alerted people that there was a fire in the building.</p>">alert</b> 
+            their owners to phone calls or messages, which helps deaf people stay in better tough with friends and loved ones.
+          </p><!-- end of p2-->
+          <p id='3'>Last but not least, service dogs are the 
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>jack of all trades</b> 萬事通 <br/><p>If you need help with anythingm call Greg. He's a <font style='color: #F778A1'>jack of all trades</font>.<br/>若你需要任何協助，可以打電話給蓋瑞格。他是個萬事通。">jack of all trades</font> 
+            among 
+            assistance dogs. They can help many kinds of disabled people with a number of particular needs, from picking things up off the floor to simply
+            <u id="a3"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>snuggle</b> [ˋsnʌg!] <br>v. 依偎 <br/>">snuggling</u> and making their owner feel loved. Together service dogs and their owners from a unique
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>bond</b> [bɑnd] n. (情感的)連結 ; 情誼 <br/> <p>Teammates on a sports team often form close bonds and become good friends.</p>">bond</b> 
+            with each other that no other dogs can match.
+          </p><!--end of p3-->
+          <p id='4'>While guide and hearing dogs can perform a new particular
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>task</b> [tæsk] n. 任務 ; 工作 <br/> <p>Using chopsticks can be a difficult task for young children.</p>">tasks</b> 
+            related to one 
+            <u id="a4"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>disability</b> [dɪsəˋbɪlətɪ] <br>n. 殘疾；殘障 <br/>">disability</u>, service dogs are even more
+            <u id="a5"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>versatile</b>  [ˋvɝsət!] <br>adj. 多功能的 <br/>">versatile</u>. One of the most 
+            <font style="background-color: #FFD5D2" id="p2"
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>well-known</b> 知名的 <br><br><b>常見與well有關的複合形容詞如下</b> : <br/><br/>well-behaved 行為端正的 ; well-dressed 穿著體面的 ;<br/> well-orderd 有秩序的 ;<br> well-rounded 才藝雙全的 ; <br/>well-meant 好意的 ;<br> well-educated 受過良好教育的">well-known</font> 
+            service dogs ever trained was Gretel.
+          </p><!-- end of p4-->
+          <p id='5'>A
+            <u id="a6"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>Labrador Retriever</b> [ˋlæbrə͵dɔr] [rɪˋtrivɚ] <br>n. 拉不拉多犬 <br/>">Labrador Retriever</u>, Gretel became the first service dog in Japan in 1995. Her owner, Mr. Noguchi, was
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>confined</b> [kənˋfaɪnd] adj. 受限制的 <br/><b><font style='background-color: #AECBEB'>confine</font></b> v. 限制 ; 使局限<p>The family was confined to their house for the weekend because of the rainstorm.</p>">confined</b> 
+            to a
+            <u id="a7"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>wheelchair</b> [ˋhwilˋtʃɛr] <br>n. 輪椅 <br/>">wheelchair</u>, so Gretel helped him dress, fetched
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>grocery</b> [ˋgrosərɪ] n. 食品雜貨(常以複數形式出現) <br/> <p>Jill buys some groceries at the supermarket every week.</p>">groceries</b>
+            off the shelf, and even opened and closed doors for him. Amazingly, Gretel lived to be 17 years old, which is a very long life for a dog. Even when she was at the end of her life, she was still 
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>on duty</b> 執勤 ; 上班 <br/><p>Police officers aren't allowed to drink alchohol while the are <font style='color: #F778A1'>on duty</font>.<br/>警察在執勤期間禁止飲酒。</p>">on duty</font> 
+            at Noguchi's side.
+          </p><!-- end of p5-->
+          <p id='6'>In Taiwan, there is the Taiwan Assistance Dog Association(TADA), which was founded to
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>educate</b> [ˋɛdʒə͵ket] v. 教育 <br/>(educate-educated-educated) <p>The teacher educated students on the importance of a healthy diet.</p>">educate</b> 
+            people about assistance dogs and train
+            <u id="a8"
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>canine</b> [ˋkenaɪn] <br>n. 犬科動物<br/>">canines</u>. Under its training programs, puppies are taught to be assistance dogs for disabled people. Though its programs only started two years ago, TADA has already attracted many people's interest in assistance dogs. With the public's
+            <b id='v11'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>emotional</b> [ɪˋmoʃən!]  adj. 情感的 ; 情緒的 <br/><b><font style='background-color: #AECBEB'>emotion</font></b> n. 情感 ; 情緒 <p>The sad movie made Lillie emotional and cry a lot while watching it.</p>">emotional</b>
+            and
+            <b id='v12'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>financial</b>  [faɪˋnænʃəl] adj. 財務的 <br/> n.財務 ; 金融 <p>The man took a class on financial planning to learn how to make more money.</p>">financial</b>
+            support, TADA hopes that soon there will be enough assistance dogs trained to care for the disabled in Taiwan.
+          </p><!-- end of p5-->
+          <p>
+            (Source: <i>English 4U September 2013 Unit1</i>)
+          </p>
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px;">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../EngIndex.html">Home</a> | <a href="../../back/EngBackground.html">Introductory section</a> | <a href="../../understanding/EngUnderstanding.html">Text-based section</a> | <a href="../../quiz/EngQuizUnit2.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

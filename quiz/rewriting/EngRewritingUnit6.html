@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Sentence Rewriting:Unit6</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+  var ans = new Array();
+  var ansLength = 2;
+  var ansCnt=0;
+  /*
+  function textOnChange(obj){
+   // alert(obj.value);
+    $(obj.id).attr('value', obj.value);
+      //a1 = obj.value;
+  }*/
+  function seeAns(obj){
+    
+    for(var i=0;i<ansLength;i++){
+      var id = "a" + (i+1);
+      ans[i] = $('input:text[name=' + id + "]").val();
+      //alert(ans[i]);
+      if(ans[i]!='')
+        ansCnt++;
+    }
+    if(ansCnt!=2){
+      ansCnt = 0;//reset
+      alert("請填完所有答案");
+      return;
+    }
+    $('div#ansOfFilling').slideToggle('slow');
+  }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit6</a></li>
+            <li><a href="../../EngIndex.html">Home</a></li>
+            <li><a href="../../back/EngBackground.html">Introductory section</a></li>
+            <li><a href="../../understanding/EngUnderstanding.html">Text-based section</a>
+              <ul>
+                <li><a href="../../understanding/article/EngArticleUnit6.html">Article</a>
+                  <ul>
+                    <li><a href="../../understanding/article/translation/EngTranslationUnit6.html">Translation</a></li>
+                    <li><a href="../../understanding/article/readloud/EngReadloudUnit6.html">Reading Aloud</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../understanding/vocabulary/EngVocaUnit6.html">Vocabulary</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../EngQuizUnit6.html">Monitoring section</a>
+              <ul>
+                <li><a href="#">Sentence Rewriting</a></li>
+              </ul>
+            </li>
+            <li><a href="rewritingUnit6.html">中文</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>Now</h2>
+          <h2><a href="../../EngIndex.html">Home</a>-><a href="../EngQuizUnit6.html">Monitoring section</a>-><a href="#"><b>Sentence Rewriting</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2>副詞子句-→分詞構句</h2>
+          <h3>從屬連接詞引導的子句稱為副詞子句：</h3>
+          <div style="background-color:#FFEE99">
+            <font><u><b>連接詞 + S + V</b></u>　, 　<u><b>S + V</b></u></font><br><br>
+            <font>　副詞子句　　　主要子句</font><br><br>
+            <font>常見的從屬連接詞如表示時間(when/while)、理由(because/as)、條件(though)等</font>
+          </div>
+          <h3>1.為了讓英文句子更簡潔，我們常將「副詞子句」簡化成<font style="color:red">「分詞構句」</font>。</h3>
+          <ul>
+            <li>
+              <font style="color:#5599FF">As</font> the <font style="color:red">Winter X Games</font> <font style="color:#00AA55">gains</font> more fans every year, it had more that 100,000 people come to witness the competitions with their own eyes in 2012.<br>
+              (課文例句)
+            </li>
+          </ul>
+          <h4><font style="background-color: #D94600;color: white"><i>Tips</i></font><br>
+          <font style="color:red">步驟1 : 刪去副詞子句的主詞(注意:副詞子句與主要子句的主詞必須相同)</font><br>
+          <font style="color:#00AA55">步驟2 : 將副詞子句的動詞改為分詞V-ing</font><br>
+          <font style="color:#5599FF">步驟3 : 刪除副詞子句的連接詞</font><br><br>
+          <u><font style="color:red">→Gaining</font> more fans every year</u>, the Winter X Games had more than 100,000 people come to witness the competitions with their own eyes 2012.<br>
+          (課文句子)<br>
+          <h3>2.須注意，若原先的動詞是主動語態，改為現在分詞V-ing；如果是被動語態時，則改為過去分詞。</h3>
+          <ul>
+            <li>
+              When David drove to work yesterday, he had an accident.<br>
+              <font style="color:red">→Driving</font> to work yesterday, David had an accident.<br><font style="background-color:#FFEE99"><font style="color:red">Driving</font>是主動動作</font>
+            </li>
+            <li>
+              When the book fair was held in Taipei last month, it was a big success.
+              <font style="color:red">→Held</font> in Taipei last month, the book fair was a big success.<br><font style="background-color:#FFEE99">書展是被舉辦，用<font style="color:red">held</font></font>
+            </li>
+          </ul>
+          <h3>3.原先的動詞如果是現在完成是或過去完成式，則改寫為having + p.p.。</h3>
+          <ul>
+            <li>
+              Because Anna had been awake all night, she looked tired this morning.<br>
+              <font style="color:red">→Having</font> been awake all night, Anna looked tired this morning.<br><font style="background-color:#FFEE99">過去完成式<font style="color:red">had been</font>改寫成<font style="color:red">Having been</font></font>
+            </li>
+          </ul>
+          _____________________________________________________________________________________________________________________
+
+          <h2><font style="color:#3EA99F">LET'S PRACTICE</font>  <br>Rewrite the following sentences with participial construction.</h2>
+        </div>
+        <div class="question">
+          1. As Rose was feeling sick, she was absent from school yesterday.
+          <br>
+          <input type="text" name="a1" id="a1" size="80"></input>
+          <br><br>
+          2. If you go to bed early every night, you will have more energy everyday.
+          <br>
+          <input type="text" name="a2" id="a2" size="80"></input>
+        </div>
+        <br>
+        <div id="doExerciseBtn">
+          <input type="button" value="See answer" class="bTranslation" id="bDo" onclick="seeAns(this)">
+          <!--<input type="button" value="取消作答" class="bTranslation" id="bCancelDo" onclick="cancelDoExerciseClick(this)">-->
+        </div>
+        <br>
+        <div id="ansOfFilling">
+          1. Feeling sick, Rose was absent from school yesterday.<br><br>
+          2. Going to bed early every night, you will have more energy every day.
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../EngIndex.html">Home</a> | <a href="../../back/EngBackground.html">Introductory section</a> | <a href="../../understanding/EngUnderstanding.html">Text-based section</a> | <a href="../EngQuizUnit1.html">Monitoring section</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

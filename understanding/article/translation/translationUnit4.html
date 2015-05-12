@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>翻譯:Unit4</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'black');
+    vd.innerHTML = "";
+  }
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit4</a></li>
+            <li><a href="../../../index.html">首頁</a></li>
+            <li><a href="../../../back/background.html">背景簡介</a></li>
+            <li><a href="#">正文</a>
+              <ul>
+                <li><a href="../../article/articleUnit4.html">全文</a>
+                  <ul>
+                    <li><a href="#">翻譯</a></li>
+                    <li><a href="../readloud/readloudUnit4.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/vocabularyUnit4.html">單字</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/quizUnit4.html">測驗</a></li>
+            <li><a href="EngTranslationUnit4.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../../index.html">首頁</a>-><a href="../../understanding.html">正文</a>-><a href="../articleUnit4.html">全文</a><br>-><a href="#"><b>翻譯</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 200px'>
+
+        </div>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>
+          <h2 class="h_title">Unit 4 : Sweeten Up Yourr Sweetheart</h2>
+        </div>
+        <div class="article">
+          <p id='1'>Valentine's Day is
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>around the corner</b> 即將來臨 <br/><p>Winter is just <font style='color: #F778A1'>around the corner</font>, so it's good to prepare by buying warm clothes.<br/>冬天快要到了，該買些保暖衣物來準備過冬了。">around the corner</font>
+            ,<br>
+            情人節即將來臨，<br><br>
+            which means it's time for you to enjoy a romantic meal with that special someone.<br>
+            這表示和重要的他/她共享一頓浪漫餐點的時候到了。<br><br>
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>A spot of</b> [spɑt] phr. 少量的 <br/><p>The cook usually makes her pasta special by adding a spot of spicy sause.</p>">A spot of</b>
+            sugar can 
+            <u id='a1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>pave the way</b> [pev] <br/>phr. 為...做好準備 <br/>">pave the way</u> for romance,<br>
+            一點點的糖分能為浪漫做好準備，<br><br>
+            so why not make every meal complete with a tasty treat?<br>
+            所以何不讓美味的好東西完美成就每一餐?<br><br>
+            Here are two desserts that are
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>guarantee</b> [͵gærənˋti] v. 保證 <br/>(guarantee-guarateed-guarateed)<br/><p>The salesman guaranteed that his product would never need repairs.</p>">guaranteed</b>
+            to satisfy your sweet tooth.<br>
+            這裡提供兩道甜點，保證可以滿足嗜吃甜食的你。<br><br>
+          </p><!-- end of p1-->
+          <p id='2'>For brunch or afternoon tea,<br>
+            早午餐或下午茶時光，<br><br>
+            you can
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>indulge</b> [ɪnˋdʌldʒ] v. 享受一下 ; 沉迷 <br/>(indulge-indulged-indulged)<br/><p>If you are trying to be healthier, you must not indulge in sweet or oily foods.</p>">indulge</b>
+            in a Liège waffles.<br>
+            你可以享受一下比利時列日鬆餅。<br><br>
+            These waffles are made of 
+            <u id='a2' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>dough</b> [do] <br/>n. 生麵團 <br/>">dough</u> and baked with sugar on the outside to make them sweeter.<br>
+            這種鬆餅是用麵糰製作，外層裹上糖粉烘焙後使味道更加香甜。<br><br>
+            They also have a rich, chewy 
+            <u id='a3' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>texture</b> [ˋtɛkstʃɚ] <br/>n. (食物) 口感；構造 <br/>">texture</u>.<br>
+            而其口感十分濃郁有嚼勁。<br><br>
+            You can make waffles more delicious by decorating them with fruits, chocolate, or ice cream.<br>
+            為了讓鬆餅看起來更美味，你還可以用水果、巧克力或冰淇淋來裝飾。<br><br>
+            The smell of a fresh waffle is so 
+            <u id='a4' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>tempting</b> [ˋtɛmptɪŋ] <br/>adj. 誘人的 <br/>">tempting</u> that you can't
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>resist</b> [rɪˋzɪst] v. 抗拒 ; 抵抗 <br/> <p>It's difficult to resist accepting free gifts from others.</p>">resist</b>
+            sharing one with your sweetheart.<br>
+            剛出爐的鬆餅香氣如此誘人，你絕對無法抵抗和所愛的人一起分享。<br><br>
+          </p><!-- end of p2-->
+          <p id='3'>
+            It's said that Asians are very
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>visual</b> [ˋvɪʒuəl] adj. 視覺的<br/><p>A visual learner understands best by seeing picture as well as words.</p>">visual</b>
+            eaters,<br>
+            有人說亞洲人事相當視覺型的饕客，<br><br>
+            so it's no surprise that waffles are becoming popular in Asia.<br>
+            無怪乎鬆餅在亞洲變得如此受歡迎。<br><br>
+            This explains why waffles in Taiwan are visually 
+            <u id='a5' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>stunning</b> [ˋstʌnɪŋ] <br/>adj. 出色的 <br/>">stunning</u> and bursting with flavor,<br>
+            這也解釋了為何台灣的鬆餅在視覺上總是效果十足、並且口味上充滿變化，<br><br>
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>so that</b> 以便於... ; 為了... ; 所以...">so that</font>
+            they
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>appeal</b> [əˋpil] v. 投...所好 ; 使...感興趣 <br/> <p>The cellphone with an HD screen appeals to fans of movies and video games.</p>">appeal</b>
+            to the eye just as much as the 
+            <u id='a6' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>taste buds</b> [test][bʌd] <br/>n. 味蕾 <br/>">taste buds</u>.<br>
+            這都是為了使它們吸睛的程度正如同其帶給味蕾的挑動。<br><br>
+            A waffle date is a great way to spend this romantic holiday!<br>
+            來個鬆餅約會是共度這個浪漫節日的的絕佳方式!<br><br>
+          </p><!--end of p3-->
+          <p id='4'>Is there a better 
+            <u id='a7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>finale</b> [fɪˋnɑlɪ] <br/>n. 結尾；壓軸 <br/>">finale</u> to your Valentine's Day that a 
+            <u id='a8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>candlelit dinner</b> [ˋkændllɪt] <br/>n. 燭光晚餐<br/>">candlelit dinner</u>?<br>
+            在情人節，還有什麼比共享燭光晚餐更適合做為一天的結尾呢?<br><br>
+            You can finish off with a chocolate 
+            <u id='a9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>fondue</b> [ˋfɑndu] [fɑnˋdu] <br/>n.  起司火鍋 <br/>">fondue</u> - a pot of melted chocolate.<br>
+            你可以用一鍋融化的巧克力為這美好的一天作結。<br><br>
+            To eat, you put a piece of fruit or
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>pastry</b> [ˋpestrɪ] n. 酥皮點心 ; 糕點 <br/> <p>For breakfast, Daniel and Allie bought some fresh pastries from the bakery.</p>">pastry</b>
+            onto a stick then
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>dip</b> [dɪp] v. 沾 ; 浸 <br/>(dip-dipped-dipped)<p>Lily dipped her toes in the pool to test the temperature of the water.</p>">dip</b>
+            it in the fondue.<br>
+            食用時，用竹籤叉著一塊水果或是糕點，然後將其浸在巧克力鍋裡。<br><br>
+            You can try dipping cookies or even ice cream into the pot.<br>
+            你也可以試著用小餅乾或甚至是冰淇淋沾巧克力食用。<br><br>
+            Whatever you put in comes out hot,
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>sticky</b> [ˋstɪkɪ] adj. 黏稠的 <br/> <p>Max used a sticky gel to make his hair stand up and look cool.</p>">sticky</b>
+            , and mouth-watering.<br>
+            無論你使用的食材是什麼，最後都會是熱騰騰、黏稠又令人垂涎三尺。<br><br>
+          </p><!-- end of p4-->
+          <p id='5'>Fondues were invented in Switzerland,<br>
+            巧克力鍋起源於瑞士，<br><br>
+            where the Swiss
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>originally</b> [əˋrɪdʒən!ɪ] adv. 最初 ; 本來<br/><b><font style='background-color: #AECBEB'>original</font></b>adj. 最初的 ; 本來的<br/><p>The museum was originally an army base built during the war.</p>">originally</b>
+            used melted cheese.<br>
+            最初瑞士人使用融化的起司。<br><br>
+            They also
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>come up with</b> 想出 ; 提供 <br/><p>Inventors <font style='color: #F778A1'>come up with</font> great ideas and try to make them real.<br/>發明家想出了許多絕佳的點子，並且嘗試讓它們成真。">came up with</font>
+            some fondue 
+            <u id='a10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>etiquette</b> [ˋɛtɪkɛt] <br/>n. 禮儀 <br/>">etiquette</u>.<br>
+            他們也想出一些巧克力鍋的食用禮儀。<br><br>
+            The rules say it's
+            <b id='v11'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>impolite</b> [͵ɪmpəˋlaɪt] adj. 無禮的 <br/><b><font style='background-color: #AECBEB'>polite</font></b> adj. 有禮貌的<br/> <p>The impolite man talked loudly while riding a public bus.</p>">impolite</b>
+            to "double dip," which means to put something into the pot a second time.<br>
+            有條規則是:「沾兩次」─也就是將某項食材二度放進鍋中─是不禮貌的；<br><br>
+            You must also be careful not to drop anything into the pot.<br>
+            而你也要小心別讓其他東西掉進鍋裡，<br><br>
+            If the man does it, he must pay for the meal.<br>
+            如果有男士讓食物掉進鍋裡，那一餐就必須由他付帳；<br><br>
+            But if the woman does it, she has to kiss everyone at the table!<br>
+            若是女士將東西掉入鍋中，那麼她必須親吻同桌的每一個人!<br><br>
+          </p><!-- end of p5-->
+          <p id='6'>Valentine's Day is a perfect time to sweeten up your sweetheart.<br>
+            情人節是「甜」滿愛人的心的最佳時機。<br><br>
+            A Liège waffles or a chocolate fondue will
+            <b id='v12' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>certainly</b> [ˋsɝtənlɪ] adv. 無疑地 ; 必定 <br/><b><font style='background-color: #AECBEB'>certain</font></b> adj. 確實 ; 必然<p>Thomas promised to come to our party, so he will certainly be here soon.</p>">certainly</b>
+            melt in your mouth,比例時列日鬆餅或巧克力鍋無疑將不只溶於你口，<br><br>
+            and melt your Valentine's heart as well.<br>
+            更能溶化情人的心。<br><br>
+          </p><!-- end of p5-->
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../index.html">首頁</a> | <a href="../../../back/background.html">背景簡介</a> | <a href="../../understanding.html">正文</a> | <a href="../../../quiz/quizUnit4.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

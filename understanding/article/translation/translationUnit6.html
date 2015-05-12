@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>翻譯:Unit6</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'black');
+    vd.innerHTML = "";
+  }
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit6</a></li>
+            <li><a href="../../../index.html">首頁</a></li>
+            <li><a href="../../../back/background.html">背景簡介</a></li>
+            <li><a href="#">正文</a>
+              <ul>
+                <li><a href="../../article/articleUnit6.html">全文</a>
+                  <ul>
+                    <li><a href="#">翻譯</a></li>
+                    <li><a href="../readloud/readloudUnit6.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/vocabularyUnit6.html">單字</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/quizUnit6.html">測驗</a></li>
+            <li><a href="EngTranslationUnit6.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../../index.html">首頁</a>-><a href="../../understanding.html">正文</a>-><a href="../articleUnit6.html">全文</a><br>-><a href="#"><b>翻譯</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 200px'>
+
+        </div>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>
+          <h2 class="h_title">Unit 6 : Winter X Games</h2>
+        </div>
+        <div class="article">
+          <p id='1'>For fans of winter sports,<br>
+            對冬季運動迷來說，<br><br>
+            nothing can match the excitement of the Winter X Games.<br>
+            沒什麼可以比「冬季極限運動」來的刺激。<br><br>
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>Competitors</b> [kəmˋpɛtətɚ] n. 競爭者 ; 對手 <br/><p>The race competitors lined up and waited for the sound of the starting gun.</p>">Competitors</b>
+            use skis, 
+            <u id='a1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>snowboard</b> [ˋsno͵bord] <br>n. 滑雪板">snowboards</u>, and 
+            <u id='a2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>snowmobile</b> [ˋsnomo͵bil] <br>n. 摩托雪橇 <br/>">snowmobiles</u> to speed down icy
+            <b id='v2' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>slopes</b> [slop] n. 斜坡 <br/><p>Her legs were not strong enough to ride her bicycle up the slope.</p>">slopes</b>
+            and
+            <b id='v3' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>launch</b> [lɔntʃ] v. 使離地 ; 起飛 <br/><p>The rocket launched off the ground and sailed through the clouds.</p>">launch</b>
+            into the sky.<br>
+            參賽選手利用雪屐、雪上滑板與雪上摩托車快速滑下冰上斜坡，且將自己送上天際。<br><br>
+            The events include so many 
+            <u id='a3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>gravity-defying</b> [ˋgrævətɪ][dɪˋfaɪŋ] <br>adj. 抗(地心)引力的<br/>">gravity-defying</u> tricks that some competitors spend just as much time in the air as they do on the snow.<br>
+            極限運動比賽包含很多對抗地心引力的特技，而參賽選手在天上與雪地上的時間一樣多。<br><br>
+          </p><!-- end of p1-->
+          <p id='2'>One exciting event is the Superpipe,<br>
+            極限運動其中一項刺激的比賽項目為「超級半管」，<br><br>
+            which is like a half-pipe,<br>
+            一座外形像半個水管，<br><br>
+            but has much taller walls that allow 
+            <u id='a4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>snowboarder</b> [ˋsno͵bordɚ] <br>n. 滑雪板玩家 ">snowboarders</u> to 
+            get higher on their jumps.<br>
+            但有高聳邊牆的場地，讓雪上滑板選手能跳得更高。<br><br>
+            The
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>athletes</b> [ˋæθlit] n. 運動員 <br/><p>Susie is fast, strong, and probably the best athlete in her gym class.</p>">athletes</b>
+            in the snowmobile event ─ Snocross ─ also spend a good amount of time in the air.<br>
+            而「雪地障礙賽」的雪上摩托車運動員也花大量時間在空中滯留；<br><br>
+            This race
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>involve</b> [ɪnˋvɑlv] v. 需要 ; 包含 <br/>(involve-involved-involved)<br/><p>Being a good teacher involves listening and helping students.</p>">involves</b>
+            speeds of over 95 km/h and jumps as long as 40 meters.<br>
+            這項競速運動包含了95公里時速，以及40公尺的飛越距離。<br><br>
+            Just watching the event gets your heart beating fast.<br>
+            單是觀看這些比賽就足以讓你心跳加速。<br><br>
+          </p><!-- end of p2-->
+          <p id='3'>The X Games were started as a summer event in 1995 by ESPN,
+            the American sports
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>broadcaster</b> [ˋbrɔd͵kæstɚ] n. 電視台<br/><p>CNN os a well-known U.S. news broadcaster.</p>">broadcaster</b>.<br>
+            極限運動會於西元1995年由美國運動轉播公司ESPN舉辦，<br><br>
+            After a huge success,<br>
+            獲得巨大成功之後，<br><br>
+            the winter games were added in 1997.<br>
+            冬季極限運動於西元1997年加入。<br><br>
+            Every year since then, the top winter athletes have come together to put on a great show.<br>
+            此後，每年都有頂尖的冬季運動員齊聚一堂，聯手完成一場偉大的表演。<br><br>
+            We should
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>expect nothing less</b><br> 正如期待或預料<br/><p>Mark studied hard for his exam, so he should <font style='color: #F778A1'>expect nothing less</font> than an excellent grade.<br/>馬克認真念書以準備考試，因此他應該會正如預料地得到極佳的成績。">expect nothing less</font>
+            from the 17<sup>th</sup> Winter X Games in January 2013.<br>
+            我們應該可以預料西元2013年1月的第17屆冬季極限運動賽事將精彩可期。<br><br>
+          </p><!--end of p3-->
+          <p id='4'>The 2013 Winter X Games will be held from January 24<sup>th</sup> to 27<sup>th</sup> in Aspen, Colorado.<br>
+            2013冬季極限運動會將在1月24日至27於美國科羅拉多州的阿斯彭舉辦。<br><br>
+            The games are returning to this famous ski
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>resort</b> [rɪˋzɔrt] n. 熱門的去處 ; 名勝 <br/> <p>My favorite place to go in the summer is a resort near Sun Moon Lake.</p>">resort</b>
+            community in the mountains for the 12<sup>th</sup> year<br>
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>in a row</b> [raʊ] phr. 接連地 <br/><p>After studying for five hours in a row, Kevin decided to take a break.</p>">in a row</b>.<br>
+            這場盛事連續12年在這座位於群山中的滑雪勝地舉行。<br><br>
+            Winters here are very cold, with temperature as low as -14°C and tons of snow,<br>
+            伴隨攝氏負14度低溫，這裡的冬天非常寒冷，<br><br>
+            but this is a paradise for winter sports.<br>
+            不過它是冬季運動的天堂。<br><br>
+            More than 200 winter athletes will come with the hopes of winning a gold
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>medal</b> [ˋmɛd!] n. 獎牌 <br/> <p>The Olympic champion held her gold medal over her head for all to see.</p>">medal</b>.<br>
+            將有超過200名冬季運動員，戴著欲贏得金牌的希望來到此地。<br><br>
+          </p><!-- end of p4-->
+          <p id='5'>
+            <font style="background-color: #C4E1FF">Gaining more fans every year</font>,<br>
+            隨著愛好者數量每年不斷成長，<br><br>
+            the Winter X Games had more than 100,000 people come to
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>witness</b>  [ˋwɪtnɪs] v. 見證 ; 目擊<br/><p>I witnessed a car accident while I was taking a walk yesterday.</p>">witness</b>
+            the competitions with their own eyes in 2012.<br>
+            冬季極限運動在西元2012年有超過十萬的觀眾親臨賽事。<br><br>
+            Visitors can ski during the day and attend concerts at night.<br>
+            造訪者白天可以從事滑雪運動，晚上則能參與演唱會。<br><br>
+            Best of all,<br>
+            最棒的是 : <br><br>
+            they get to watch up close the amazing X Games participants who
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>put it all on the line</b> 大膽嘗試 ; 全力以赴 <br/><p>James <font style='color: #F778A1'>put it all on the line</font> when he tried to enter a good college.<br/>詹姆士全力以赴以求進入好的阿學就讀。">put it all on the line</font>.<br>
+            他們能夠近距離觀賞卯足全力演出的極限運動選手。<br><br>
+          </p><!-- end of p5-->
+          <p id='6'>Even if you can't make it to Aspen,<br>
+            即使你無法親臨阿斯彭，<br><br>
+            the games are
+            <b id='v11' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>fantastic</b> [fænˋtæstɪk]  adj. 極好的<br/><p>Reaching the top of a high mountain is a fantastic experience.</p>">fantastic</b>
+            for television audiences, as cameras follow every twist and turn of the
+            <b id='v12' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>daring</b> [ˋdɛrɪŋ] adj. 勇於冒險的 ; 大膽的 <br/><p>The daring man jumped over a river on his motorcycle.</p>">daring</b>
+            athletes.<br>
+            但由於攝影機尾隨無畏的運動員，捕捉他們的旋轉和翻滾動作，極限賽事對電視機前的觀眾來說也是精彩萬分。<br><br>
+            While these 
+            <u id='a5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>stunt</b> [stʌnt] <br>n. 特技 <br/>">stunts</u> can be extremely dangerous,<br>
+            這些特技雖然是極度危險，<br><br>
+            they're safe to watch from the sofa.<br>
+            從沙發上觀賞相對很安全。<br><br>
+            Pay attention to your local TV schedule so you can catch all the action of the 2013 Winter X Games.<br>
+            留意你居住所在地的電視時刻表，你便能捕捉2013冬季極限運動完整賽事。<br><br>
+          </p><!-- end of p6-->
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../index.html">首頁</a> | <a href="../../../back/background.html">背景簡介</a> | <a href="../../understanding.html">正文</a> | <a href="../../../quiz/quizUnit6.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>全文:Unit3</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href>Unit3</a></li>
+            <li><a href="../../index.html">首頁</a></li>
+            <li><a href="../../back/background.html">背景簡介</a></li>
+            <li><a href="../understanding.html">正文</a>
+              <ul>
+                <li><a href="#">全文</a>
+                  <ul>
+                    <li><a href="translation/translationUnit3.html">翻譯</a></li>
+                    <li><a href="readloud/readloudUnit3.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../vocabulary/vocabularyUnit3.html">單字</a>
+                  <ul>
+                    <li><a href="#">單字列表</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../quiz/quizUnit3.html">測驗</a></li>
+            <li><a href="EngArticleUnit3.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../index.html">首頁</a>-><a href="../understanding.html">正文</a>-><a href="#"><b>全文</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 100px'>
+
+        </div>
+        <hr>
+        <br>
+        <ul>
+        <p>
+          <font style="color: #5599FF" size="5px">霍夫曼的<font size="7px">大</font>作</font>
+        <p>
+          <div style="float:left">
+            <img src="../../images/frog.jpg">
+            </img>
+          </div>
+
+          <font style="color: red" size="5px">Kobe Frog</font><br>
+          尺寸: 10x12x14公尺<br>
+          材料: 充氣墊、金屬<br>
+          Kobe Frog位於神戶的兵庫縣立美術館屋頂，該博物館建於西元1995年，是曾遭阪神大地震襲擊的地點。帶著派對帽的青蛙想傳達享受人生，並在天災或壓力襲擊時保持彈性的觀念。
+        </p>
+        
+        <p>
+          <div style="float:left">
+            <img src="../../images/stellman.jpg">
+            </img>
+          </div>
+
+          <font style="color: red" size="5px">Steelman</font><br>
+          尺寸: 6x5x11公尺<br>
+          材料: 水泥、礦物塗料<br>
+          Stellman位於阿姆斯特丹，這隻腋下夾著一個枕頭的大熊有個簡單的願望:牠希望有塊能夠好好棲息的地方。
+        </p>
+
+        <p>
+          <div style="float:left">
+            <img src="../../images/lookoutrabbit.jpg">
+            </img>
+          </div>
+
+          <font style="color: red" size="5px">Lookout Rabbit</font><br>
+          尺寸: 6x7x12公尺<br>
+          材料: 水泥、砂、玻璃、金屬、木材、水泥漆<br>
+          Lookout Rabbit位於荷蘭的奈美根市，只展出六個月。這隻巨大的兔子其實是個瞭望台，可以透過牠的紅眼睛眺望瓦爾河河面。
+        </p>
+        <h5>圖片來源:活用空中美語Sep. 2013 unit4</h5>
+      </ul>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>
+          <h2 class="h_title">Unit 3 : Florentijn Hofman: Spreading Joy With Art</h2>
+        </div>
+        <div class="article">
+           <div style="float:left">
+            <img src="../../images/hufman.jpg">
+            </img><br>
+            <b style="color: "> Florentijn Hofman </b><br>
+            <h5>圖片來源:活用空中美語<br>Sep. 2013 unit4</h5>
+          </div>
+          <p id='1'>A giant rubber duck
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>float</b> [flot] v. 漂浮 <br/><p>Boats can float if there is enough water.</p>">floated</b> 
+            into Hong Kong's Victoria Harbor this year, making the busy 
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>port</b> [port] n. 港口 <br/><p>The lighthouse guides all the ships to the port.</p>">port</b>
+            a huge 
+            <u id='a1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>bathtub</b> [ˋbæθ͵tʌb] <br>n. 浴缸 <br/>">bathtub</u>. This scene was not a first, however, as the Rubber Duck has been surprising cities since 2007.
+          </p><!-- end of p1-->
+          <p id='2'>Dutch artist Florentijn Hofman is the man behind the Rubber Duck. His first 
+            <u id='a2' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>commission</b> [kəˋmɪʃən] <br>n. 委任 ; 委託 <br/>">commission</u> was to paint a 
+            <u id='a3' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>mural</b> [ˋmjʊrəl] <br>n. 壁畫 <br/>">mural</u> on 
+            the 
+            <u id='a4' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>cooling tower</b> [ˋtaʊɚ] <br>n. 冷卻塔 <br/>">cooling tower</u> of Kernwasser Wonderland in Germany. This 15,000-square-meter painting inspired him to continue to make large art pieces. Now his works can be found around the world. He tied 10,000 
+            <u id='a5' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>sandal</b> [ˋsænd!] <br>n.拖鞋；涼鞋 <br/>">sandals</u> together to create Fat Monkey in São Paulo. The 15-meter ape lies outdoors in a park and
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>catches the eye of</b> 引人注目 ; 引起注意 <br/><p>The actor <font style='color: #F778A1'>caught the eye of</font> the famous director when he made his first TV commercial.<br/>這位演員第一次演出電視廣告就引起著名導演的注意。">catches the eye of</font> 
+            any 
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>passer-by</b> [ˋpæsɚˋbaɪ] n. 路人 ; 經過的人 (複數為passers-by) <br/> <p>The salesman tried to start conversations with every passer-by</p>">passer-by</b>.
+            The artist also created Big Yellow Rabbit, which
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>be made...</b> 由...製成 / 組成的 <br/>">is made of</font>
+            thousands of roof 
+            <u id='a6' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>shingles</b> [ˋʃɪŋg!] <br>n. 木瓦板；屋頂板 <br/>">shingles</u> and is in Örebro, Sweden.
+          </p><!-- end of p2-->
+          <p id='3'>
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>Unlike</b> [ʌnˋlaɪk] prep. 不像 ; 和...不同<br/><b><font style='background-color: #AECBEB'>like</font></b> prep. 像 ; 和...相同 <p>She caught a cold so her voice was quite unlike her usual one.</p>">Unlike</b>
+            many modern artists, Hofman chooses everyday subjects that everyone can recognize, especially animals. These large cartoon-like creations always get a lot of
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>attention</b> [əˋtɛnʃən] n. 注意 <br/> <p>Lucy enjoyed the speech and paid attention to every word.</p>">attention</b>.
+            He feels that their cute appearance and giant size can bring people happiness and
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>remind</b> [rɪˋmaɪnd] v. 使想起 ; 提醒 <br/> <p>The weather reporter reminded everyone to carry their umbrellas.</p>">remind</b>
+            them of their childhood. 
+          </p><!--end of p3-->
+          <p id='4'>Although Hofman's large and colorful creations have a
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>playful</b> [ˋplefəl] n. adj. 開玩笑的 ; 愛玩的 <br/> <p>Young dogs often fight with each other in a playful way.</p>">playful</b> 
+            quality, the artist has a serious attitude about his work. He says that his art, like the Rubber Duck, is make for the public. Several companies offered to buy the duck, but Hofman rejected them all.
+          </p><!-- end of p4-->
+          <p id='5'>When Hofman travels around the world to create huge animal art, he likes to make it locally. He uses local
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>materials</b> [məˋtɪrɪəl] n. 材料 <br/><p>Clothes made out of materials like cotton are soft and comfortable.</p>">materials</b>
+            , and 
+            <u id='a7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>enlist</b> [ɪnˋlɪst] <br>v. 獲取...支持或幫助 <br/><p>Boats can float if there is enough water.</p>">enlists</u> local artists and
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>volunteers</b> [͵vɑlənˋtɪr] n. 義工 ; 志願者 <br/> ">volunteers</b>
+            to help him and his team. Once the art is put on public display, people often stop to view it. Many say his art makes it easier to start conversations with other 
+            <u id='a8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>onlooker</b> [ˋɑn͵lʊkɚ] <br>n.觀眾；旁觀者 <br/><p>Boats can float if there is enough water.</p>">onlookers</u>. As a result, Hofman's art helps strangers to make contact with each other again.
+          </p><!-- end of p5-->
+          <p id='6'>For Hofman, the audiences'
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>reaction</b> [rɪˋækʃən] n. 反應 ; 回應 <br/><b><font style='background-color: #AECBEB'>react</font></b> v. 反應<p>The child's reaction to the scary movie was to scream and cry</p>">reaction</b>
+            is an essential part of his work. He 
+            <b id='v11'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>invite</b> [ɪnˋvaɪt] v. 邀請<br/>(invite-invited-invited)<p>Joe invited the girl he likes to go out on a date with him.</p>">invites</b>
+            the public to
+            <b id='v12'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>reconsider</b> [͵rikənˋsɪdɚ] v. 重新思考 ; 再斟酌 <br/><b><font style='background-color: #AECBEB'>consider</font></b> v. 考慮 ; 細想 <p>Once the stubborn boss makes a decision, he never reconsiders.</p>">reconsider</b>
+            things that appear to be
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>a matter of course</b> 理所當然的事 <br/><p>You are expected to make your own bed as <font style='color: #F778A1'>a matter of course</font>.<br/>你理所當然地應該要自己鋪床。">a matter of course</font>
+            at first. His purpose is simple: to give people a break from their daily lives, and make them smile.
+          </p><!-- end of p5-->
+          <p>
+            (取自: <u>實用空中美語</u>2013年9月號 Unit4)
+          </p>
+          <div style="float:left">
+            <img src="../../images/hufduck_opt.jpg">
+            </img>
+            <h5>圖片來源:<a href="http://junior.24sata.hr/start/sjecate-se-patkice-koja-putuje-pokvarila-se-i-ispuhala-315276">Sjećate se patkice koja putuje? Pokvarila se i ispuhala</a></h5>
+          </div>
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../index.html">首頁</a> | <a href="../../back/background.html">背景簡介</a> | <a href="../../understanding/understanding.html">正文</a> | <a href="../../quiz/quizUnit3.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

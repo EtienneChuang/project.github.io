@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>CSS3_clouds</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('div#translation').hide();
+    $('input#cancelTranslation').hide();
+  });
+  function translationClick(obj){
+      //$('div#translation').html('<input type="button" id="bTranslation" value="隱藏">');
+      $('input#cancelTranslation').show();
+      $('div#translation').slideToggle('normal');
+  };
+  function canceltranslationClick(obj){
+      $('input#cancelTranslation').hide('slow');
+      $('div#translation').slideToggle('slow');
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="examples.html">背景知識</a></li>
+            <li><a href="#">理解</a>
+              <ul>
+                <li><a href="#">全文</a>
+                  <ul>
+                    <li><a href="#">翻譯</a></li>
+                    <li><a href="#">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">單字</a>
+                  <ul>
+                    <li><a href="#">單字解釋</a></li>
+                    <li><a href="#">單字測驗</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down Three</a></li>
+                <li><a href="#">Drop Down Four</a></li>
+                <li><a href="#">Drop Down Five</a></li>
+              </ul>
+            </li>
+            <li><a href="another_page.html">測驗</a></li>
+            <li><a href="#">補充</a></li>
+            <li><a href="contact.php">連絡我們</a></li>
+          </ul>
+        </div>
+      </nav>	
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">CCS3<span class="logo_colour">_clouds</span></a></h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>New Website Launched</h4>
+          <h5>January 1st, 2013</h5>
+          <p>2013 sees the redesign of our website. <a href="#">Read more</a></p>
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="http://translate.google.com.tw/">Google翻譯</script></a></li>
+            <li><a href="http://tw.dictionary.yahoo.com/">奇摩字典</a></li>
+            <li><a href="http://www.bbc.co.uk/worldservice/learningenglish/language/">BBC Learning English</a></li>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2 class="h_title">Unit 1 : Taiwanese Designer's Fashions fit For a First Lady</h2>
+        </div>
+        <div class="article">
+          <p id='1'>Jason Wu may only be 26 years old, but the Taiwanese-born fashion designer has already seen his dresses 
+            <u>donned</u> by some highly visible and 
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>glamorous</b> [ˈglæmərəs] adj. 迷人的 <br/> <p>The famous fashion model is always wearing glamorous clotheds <br/>那位知名的時裝與模特兒總是穿著光鮮亮麗的衣服。</p>">glamorous</b> 
+            people. He found himself <u>　1　</u> the 
+            <u>limelight</u> again when Michelle Obama wore one of his dresses to the 2013 <u>inaugural ball</u>.
+            The Fisrt Lady is <u>　2　</u> of a Wu 
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>fanatic</b> [fəˈnætɪk] n. 狂熱份子 <br/> <p>Ted is a film fanatic, and his film collection includes thousands of movies.<br/>泰德很迷電影，他收藏了好幾千部影片。</p>">fanatic</b>
+            , <u>sporting</u> his <u>haute couture</u> during
+            the President's first <u>inauguration</u>, on the cover of <i>Vogue</i> magazine, and on state visits to London to meet Queen Elizabeth II.
+          </p>
+          <p id='2'>Wu, who was born in Taipei, was 
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>engrossed</b> [ɪnˈgrost] adj. 全神貫注的 <br/> <p>be engrossed in  著迷於... <br/>I was so engrossed in the novel that I completely lost track of time.<br/>我看小說看得出神，完全忘了時間。<p>">engrossed</b> 
+            by fashion at an early age, and 
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>take to</b> 從事;開始喜歡 <br/> <p>Mark took to baseball at a young age because his father encouraged him to do so.<br/>在父親的鼓勵之下，馬克很小的時候就開始打棒球了。<p>">took to</b> 
+            drawing sketches of wedding dresses he saw in Taipei shops. His mother noted his 
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>fascination</b> [ˌfæsnˈeʃən] n. 著迷 <br/> <p>I have a fascination for Japanese culture so I'm really looking forward to my trip to Japan.<br/>我對日本文化相當著迷，所以很期待這趟日本之旅。<p>">fascination</b> 
+            and sent him to study in Vancouver, Canada to 
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>refine</b> [rɪˈfɑɪn] v. 使......精進 <br/><p>The cooking instructor is helping his students to refine their cutting techniques.<br/>這名烹飪老師正在教他的學生如何精進刀功。<p>">refine</b> 
+            his drawing <u>　3　</u>. When he was 16, Wu <u>cold called</u> the president of 
+            <b id='v7'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>integrity</b> [ɪnˈtɛgrətɪ] n. 正直;誠實 <br/><p>A man of integrity always tells the truth and stands up for what he believes in.<br/>正直的人總是實話實說，堅持信念。">Integrity</b> 
+            Toys, a company which made dolls, and sent them his sketches for <u>　4　</u> doll clothing. Before long he was hired and promoted to creative director, designing dolls' outfits. <u>Stint</u> in Tokyo, Paris, and New York followedd as he went from creating <u>miniature</u> clothes to <u>life-sized ensembles</u> in 2006. Over the next few years he dressed the likes of Ivana Trump and notable drag queen RuPaul. It wasn't until 2008 <u>　5　</u> Michelle Obama discovered Wu's seemingly timeless design 
+            <b id='v8'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>sensibility</b> [ˌsɛnsəˈbɪlətɪ] n. 敏感;鑑賞力 <br/><p>The director's artistic sensibilities ake him a perfect choice for this movie.<br/>這位導演的藝術美感使他成為這部電影的不二人選。<p>">sensibilities</b>. 
+            An editor at 
+            <i>Vogue</i> showed Obama Wu's work, which <u>　6　</u> her interest and soon she was sporting his clothes on television. This 
+            <b id='v9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>solidify</b> [səˈlɪdəfɑɪ] v. 鞏固，加強 <br/><p>The two companies signed a contract to solidify their partnership.<br/>這兩間公司簽訂合約，鞏固彼此的合作關係。<p>">solidified</b> 
+            what was arguably Wu's breakout moment in the fashion world. The young desinger's dresses continue to <u>grace</u> red carpets and find their way into the wardrobes of 
+            <b id='v10'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>celebrity</b> [səˈlɛbrətɪ] n. 名人 <br/><p>The company hired a celebrity to help promote their new line of products.<br/>這間公司特地請名人幫忙宣傳他們最新系列的產品。">
+            celebrities</b> as he keeps <u>　7　</u> in the fashion world.
+          </p>
+        </div>
+        <div id="transBtn">
+          <input type="button" value="翻譯" class="bTranslation" id="bTranslation" onclick="translationClick(this)">
+          <input type="button" value="隱藏" class="bTranslation" id="cancelTranslation" onclick="canceltranslationClick(this)">
+        </div>
+        <br/>
+        <div id="translation">
+          <p class="translation">　　吳季剛雖然年僅26歲，但這位出身台灣的時裝設計師，作品早已被許多名流穿過。2013年總統就職舞會時，蜜雪兒·歐巴馬穿上他設計的禮服，吳季剛再次成為鎂光燈的焦點。第一夫人真可說是吳季剛的粉絲，他不但穿著吳季剛設計的高級訂製服出席第一次的總統就職典禮，還登上Vogue雜誌的封面，同時也前往倫敦進行與女王伊莉莎白二世的國事訪問。</p>
+          <p class="translation"> 　　吳季剛出身台北，從小便鍾愛時尚，喜歡把台北店裡看到的婚紗都畫下來。吳季剛的母親注意到他對時尚的迷戀，於是將他送往加拿大溫哥華留學，精進他的繪畫能力。十六歲的時候，吳季剛主動聯絡製造玩偶的「誠實玩具」公司總裁，將可能獲選的玩偶服裝的草稿寄過去。不久後，他便受雇並拔擢成為創意總監，設計玩偶服裝。2006年時，吳季剛從創作迷你的服裝變成設計真人大小的時裝，東京、巴黎與紐約等地的工作邀約便隨之而來。之後幾年，他也替艾凡娜·川普與知名的變裝皇后魯保羅等人設計服裝。直到2008年，蜜雪兒·歐巴馬才發掘了吳季剛近乎不朽的設計美感。Vogue雜誌的編輯曾給蜜雪兒·歐巴馬看過吳季剛的作品，她相當感興趣，很快地便穿著他的衣服在電視上亮相。這也印證了此時無疑是吳季剛在時尚界裡最關鍵的一刻。當吳季剛不斷地成為時尚界的焦點，這位年輕設計師的服裝將持續為紅地毯增色，成為名人衣櫥裡的收藏。</p>
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+      <p><a href="index.html">首頁</a> | <a href="examples.html">背景知識</a> | <a href="page.html">理解</a> | <a href="another_page.html">測驗</a> | <a href="contact.php">聯絡我們</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

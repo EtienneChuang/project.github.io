@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>翻譯:Unit5</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../../js/constructor.js"></script>
+  <script type="text/javascript">
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    $(obj).css('color', 'black');
+    vd.innerHTML = "";
+  }
+  function vacOver(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    var id = obj.id
+    //alert(id);
+    var position = $("#"+id).offset();  
+    var x = position.left;  
+    var y = position.top;  
+    $(obj).css('color', 'red');
+    vd.innerHTML = obj.getAttribute('message');
+    vc.innerHTML = obj.getAttribute('message');
+    $("div#vocaCard").css('position', 'absolute');
+    //$("div#vocaCard").css('left', x).css('top', y);
+    $("div#vocaCard").css('left', x-40+'px').css('top', y+15+'px');
+    $('div#vocaCard').show();
+  }
+  function vacOut(obj){
+    var vd = document.getElementById('vocaDisplay');
+    var vc = document.getElementById('vocaCard');
+    $(obj).css('color', 'black');
+    vc.innerHTML = "";
+    $('div#vocaCard').hide();
+  }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit5</a></li>
+            <li><a href="../../../index.html">首頁</a></li>
+            <li><a href="../../../back/background.html">背景簡介</a></li>
+            <li><a href="#">正文</a>
+              <ul>
+                <li><a href="../../article/articleUnit5.html">全文</a>
+                  <ul>
+                    <li><a href="#">翻譯</a></li>
+                    <li><a href="../readloud/readloudUnit5.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../vocabulary/vocabularyUnit5.html">單字</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../../../quiz/quizUnit5.html">測驗</a></li>
+            <li><a href="EngTranslationUnit5.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../../index.html">首頁</a>-><a href="../../understanding.html">正文</a>-><a href="../articleUnit5.html">全文</a><br>-><a href="#"><b>翻譯</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+        <span>
+          <font style="background-color: #B4E3FF">VOCABULARY</font>/<font style="background-color: #F2B7B4">PHRASE</font>
+        </span>
+        <hr>
+        <br>
+        <div id='vocaDisplay' style='height: 200px'>
+
+        </div>
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h5>小提示: 將游標移到以"粗體"表示的單字可查看解釋</h5>
+          <h2 class="h_title">Unit 5 : Finding NEMO 3D</h2>
+        </div>
+        <div class="article">
+          <p id='1'>Long time no "sea"!<br>
+            「海﹝嗨﹞，好久不見」<br><br>
+            Disney brings back one of its
+            <b id='v1' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message='<b>classic</b> [ˋklæsɪk] adj. 經典的 <br/><p>The Beatles made many classic songs in their career, such as "Let it be".</p>'>classic</b>
+            <u id='a1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>animated</b> [ˋænə͵metɪd] <br>adj. 動畫的 <br/>">animated</u> tales, <i>Finding Nemo</i>, in breathtaking 3D.<br>迪士尼以令人驚嘆的3D模式，重新上映了其中一部經典動畫《海底總動員》。<br><br>
+            The film won the 2004 Oscar for Best Animated Feature.<br>
+            這部片曾在西元2004年贏得奧斯卡最佳動畫片獎。<br><br>
+            Now, a whole new audience,
+            <font style="background-color: #FFD5D2" id='p1'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>as well as</b> 以及 ; 和 <br/><p>A pet dog will make you happy <font style='color: #F778A1'>as well as</font> protect your home.<br/>一隻寵物狗將會讓你感到開心和保護你的家。">as well as</font>
+            old fans, will get a chance to enjoy this 
+            <u id='a2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>heartwarming</b> [ˋhɑrt͵wɔrmɪŋ] <br>adj. 溫馨感人的 <br/>">heartwarming</u> story with added visual effects from Pixar.<br>
+            現在，不只以前的影迷，很多新的觀眾也都有機會欣賞這部皮克斯所帶來、溫暖人心兼具視覺效果的動畫故事。<br><br>
+          </p><!-- end of p1-->
+          <p id='2'><i>Finding Nemo</i> follows the
+            <b id='v2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>title character</b> [ˋkærɪktɚ] n. (電影、書籍等)同名角色 <br/><p>Charlie Bucket is the title character of <i>Charlie and the Chocolate Factory</i></p>">title character</b>
+            , a clownfish, who wants to show his independence and explore the large ocean world on his own.<br>
+            《海底總動員﹝尋找尼莫﹞》是一個講述電影同名角色的故事，主角是一隻想要展現獨立，同時也想靠自己的力量探索浩瀚海洋世界的小丑魚。<br><br>
+            <font style="background-color: #FFD5D2" id='p2'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>despite, in spite of, though</b> 儘管 ; 雖然">Despite</font>
+            the
+            <b id='v3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>warning</b> [ˋwɔrnɪŋ] n. 警告 <br/><b><font style='background-color: #AECBEB'>warn</font></b> v. 警告<br/><p>Nowadays there are many health warnings on cigarette boxes.</p>">warning</b>
+            of danger from his father, Marlin,<br>
+            儘管爸爸馬林警告他這樣做很危險，<br><br>
+            Nemo swims away and is caught by a 
+            <u id='a3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>scuba diver</b> <br> [ˋskjubə][ˋdaɪvɚ] <br>n. (帶著氧氣筒的)潛水員 <br/>">scuba diver</u>.<br>
+            尼莫還是一意孤行，而被一位潛水員抓走。<br><br>
+            He is kept in a fish tank,<br>
+            他隨後被放進了一個魚缸中，<br><br>
+            where he sees no hope in life.<br>
+            因而他感到人生毫無希望。<br><br>
+            While Marlin is trying every possible way to find his son,<br>
+            就在此時，馬林試著找尋任何可能的方法要找到他兒子，<br><br>
+            Nemo also plans his escape from the tank.<br>
+            尼莫同時也盤算著如何從魚缸逃離。<br><br>
+          </p><!-- end of p2-->
+          <p id='3'>Fortunately,<br>
+            很幸運地，<br><br>
+            Marlin
+            <b id='v4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>bump into</b> [bʌmp] phr. 無意中遇到<br/><p>It was a nice surprise for Daivd when he bumped into his favorite idol at the mall.</p>">bumps into</b>
+            a blue tang fish named Dory,<br>
+            馬林碰見一隻色刺尾魚多莉<br><br>
+            and they form an
+            <b id='v5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>effective</b> [ɪˋfɛktɪv] adj. 有效的<br/><b><font style='background-color: #AECBEB'>effect</font></b> n. 效果 ; 影響</br><p>The effective sales team makes a lot of money for their company.</p>">effective</b>
+            <b id='v6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>partnership</b> [ˋpɑrtnɚ͵ʃɪp] n. 合作關係 ; 合夥關係<br/><p>Venus and Serena Williams have a good partnership when they play doubles tennis.</p>">partnership</b>
+            to try to rescue Nemo any way they can.<br>
+            他們組成了精良、有效的夥伴關係，試著用任何可能的方是拯救尼莫。<br><br>
+            Though they encounter many problems in the ocean,<br>
+            雖然他們在海洋中遭遇許多問題，<br><br>
+            they keep on going.<br>
+            但他們還是繼續前行。<br><br>
+            By 
+            <u id='a4'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>persevere</b> [͵pɝsəˋvɪr] <br>v. 堅持不懈 <br/>">persevering</u>,<br>
+            在堅持不懈的努力下，<br><br>
+            they finally make it to Nemo and free him again.<br>
+            他們最後終於成功解救了尼莫，而尼莫也因此再次獲得了自由。<br><br>
+          </p><!--end of p3-->
+          <p id='4'>It's not hard to figure out why <i>Finding Nemo</i> is so successful and highly praised.<br>
+            《海底總動員》為何如此成功並享有高度讚譽不難讓人理解，<br><br>
+            Aside from the unforgettable characters and 
+            <u id='a5'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>hilarious</b> [hɪˋlɛrɪəs] <br>adj. 極逗趣的 <br/>">hilarious</u> 
+            <u id='a6'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>storyline</b> [ˋstorɪ͵laɪn] <br>n. 故事情節 <br/>">storyline</u>,<br>
+            除了有令人難忘的角色及歡樂熱鬧的故事情節外，<br><br>
+            the movie
+            <b id='v7' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>illustrate</b> [ˋɪləstret] v. 舉例說明 ; 闡明 <br/>(illustrate-illustrated-illustrated)<br><p>Teachers illustrate the meaning of vocabulary by giving clear examples.</p>">illustrates</b>
+            <b id='v8' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>valuable</b> [ˋvæljʊəb!] adj. 寶貴的 ; 有價值的 <br/><b><font style='background-color: #AECBEB'>value</font></b> n. 價值<p>David is a valuable member of the team because he always has good ideas.</p>">valuable</b>
+            lessons for both children and adults.<br>
+            這部片也為家長及孩子上了寶貴的一課。<br><br>
+            <font style="background-color: #FFD5D2" id='p3'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>For instance</b> 例如<br/><p>My mom knows how to cook many desserts, <font style='color: #F778A1'>for instance</font>, pumpkin pie.<br/>我媽知道如何製作例如南瓜派等許多點心">For instance</font>,<br>
+            例如 : <br><br>
+            kids can learn the danger of wandering away from their parents, as Nemo finds trouble when he ignores his father and swim alone.<br>
+            孩子可以從尼莫身上學到忽視爸爸的要求、獨自離開而遭遇困難的危險；<br><br>
+            Parents can learn not to be over
+            <b id='v9' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>protective</b> [prəˋtɛktɪv] adj. 保護的 <br/><b><font style='background-color: #AECBEB'>protect</font></b> v. 保護<p>Masks are protective against air pollution while you are riding a scooter.</p>">protective</b>
+            ,<br>
+            家長也可以體誤不宜對孩子過度保護，<br><br>
+            as Marlin realizes giving Nemo some freedom helped their relationship.<br>
+            因為馬林終於了解給尼莫一些自由更能增進彼此的關係。<br><br>
+
+            Finally,<br>
+            最後，<br><br>
+            there is a theme for all ages -
+            <b id='v10' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>friendship</b> [ˋfrɛndʃɪp] n. 友誼 <br/> <p>Gina liked her new coworkers and hoped to form friendships with them.</p>">friendship</b>
+            .<br>
+            不管你是哪個年齡層，本片的主軸─就是友誼，<br><br>
+            Without Dory's help,<br>
+            若沒有多莉的協助，<br><br>
+            Nemo and Marlin couldn't make it.<br>
+            尼莫和馬林也無法成功。<br><br>
+            Their 
+            <u id='a7'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>teamwork</b> [ˋtimˋwɝk] <br>n. 團隊合作 <br/>">teamwork</u> shows us how
+            <b id='v11' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>cooperation</b> [ko͵ɑpəˋreʃən] n. 合作 ; 協力 <br/> <p>The cooperation and effort of the team help them get through challenges.</p>">cooperation</b>
+            is
+            <b id='v12' 
+            onMouseOver="vacOver(this)" 
+            onMouseOut="vacOut(this)" 
+            message="<b>vital</b> [ˋvaɪt!] adj. 極其重要的 ; 不可缺少的 <br/> <p>Getting enough sleep is vital for a healthy body.</p>">vital</b>
+            to success and 
+            <u id='a8'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>achievement</b> [əˋtʃivmənt] <br>n. 成就 <br/>">achievement</u>.<br>
+            他們的協力合作告訴我們 : 團結互助是成功的重要關鍵。<br><br>
+          </p><!-- end of p4-->
+          <p id='5'><i>Finding Nemo 3D</i> is not the first classic animation re-released in 3D,<br>
+            《海底總動員》並不是第一部以3D影像重新上映的經典動畫，<br><br>
+            but it might be the most 
+            <u id='a9'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>spectacular</b> [spɛkˋtækjəlɚ] <br>adj. 壯觀的 <br/>">spectacular</u>.<br>
+            但它很有可能是目前視覺最開闊、場面最壯觀的一部。<br><br>
+            The ocean, which is all about depth and space, is a perfect fit for 3D technology.<br>
+            對於3D技術來說，又深又寬廣的海洋是影像呈現上級完美的素材，<br><br>
+            Audiences will wonder at the scenes capturing the ocean's 
+            <u id='a10'
+            onMouseOver="vacOver(this)"
+            onMouseOut="vacOut(this)"
+            message="<b>overwhelming</b> [͵ovɚˋhwɛlmɪŋ] <br>n. 強大的;勢不可檔的 <br/>">overwhelming</u> size and power.<br>
+            每一幕海洋所呈現的浩瀚及力量，都將讓觀眾驚訝不已。<br><br>
+            So "sea" it like never before in 3D now!<br>
+            現在，就以從未看過此片的心情來海視3D版吧!
+          </p><!-- end of p5-->
+        </div>
+        <div id="vocaCard" style="background-color:#FFF4C1;
+          width:200px;
+          height:auto;
+          opacity: 0.93;border: 1px #888888 solid;
+          -moz-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          -webkit-box-shadow: 0px 0px 33px 1px #b4c8ca;
+          box-shadow: 0px 0px 33px 1px #b4c8ca;
+          border: 1px #000000 solid;
+          padding-top:10px;
+          padding-left:10px">
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../../index.html">首頁</a> | <a href="../../../back/background.html">背景簡介</a> | <a href="../../understanding.html">正文</a> | <a href="../../../quiz/quizUnit5.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>

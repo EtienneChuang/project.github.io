@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>填空測驗:Unit2</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="../../js/constructor.js"></script>
+  <script type="text/javascript">
+  var ans = new Array();
+  var ansLength = 2;
+  var ansCnt=0;
+  /*
+  function textOnChange(obj){
+   // alert(obj.value);
+    $(obj.id).attr('value', obj.value);
+      //a1 = obj.value;
+  }*/
+  function seeAns(obj){
+    
+    for(var i=0;i<ansLength;i++){
+      var id = "a" + (i+1);
+      ans[i] = $('input:text[name=' + id + "]").val();
+      //alert(ans[i]);
+      if(ans[i]!='')
+        ansCnt++;
+    }
+    if(ansCnt!=2){
+      ansCnt = 0;//reset
+      alert("請填完所有答案");
+      return;
+    }
+    $('div#ansOfFilling').slideToggle('slow');
+    $('input:button#bDo').hide();
+  }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="#">Unit2</a></li>
+            <li><a href="../../index.html">首頁</a></li>
+            <li><a href="../../back/background.html">背景簡介</a></li>
+            <li><a href="../../understanding/understanding.html">正文</a>
+              <ul>
+                <li><a href="../../understanding/article/articleUnit2.html">全文</a>
+                  <ul>
+                    <li><a href="../../understanding/article/translation/translationUnit2.html">翻譯</a></li>
+                    <li><a href="../../understanding/article/readloud/readloud.html">全文朗讀</a></li>
+                  </ul>
+                </li>
+                <li><a href="../../understanding/vocabulary/vocabularyUnit2.html">單字</a></li>
+              </ul>
+            </li>
+            <li><a href="../quizUnit2.html">測驗</a>
+              <ul>
+                <li><a href="#">句子填空</a></li>
+              </ul>
+            </li>
+            <li><a href="EngFillingUnit2.html">English</a></li>
+          </ul>
+        </div>
+      </nav>  
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <!--
+          <h1><a href="index.html">English<span class="logo_colour">_learning</span></a></h1>-->
+          <h2>目前位置</h2>
+          <h1><a href="../../index.html">首頁</a>-><a href="../quizUnit2.html">測驗</a>-><a href="#"><b>句子填空</b></a></h1>
+        </div>
+      </div>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar" id="latestNews">
+        </div>
+        <div class="sidebar" id="usefulLink">
+        </div>
+
+        <!--
+        <div class="sidebar">
+          <h3>More Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div class="content">
+        <div class="title">
+          <h2>「adj. / adv. / N + 分詞」作複合形容詞</h2>
+          <h3>多數的複合形容詞是由兩個以上的字使用連字號「─」連結所構成。複合形容詞可取關係子句，讓文句更簡潔；本次主要介紹「adj. / adv. / N + 分詞」形式的複合形容詞。</h3>
+          <table border="0" bordercolor="#FFCC00" style="background-color:#FFFFCC" width="100%" cellpadding="3" cellspacing="3">
+            <tr>
+              <th>　　　　　　　</th>
+              <th>當動詞原意為「主動」<br>變化為「現在分詞」</th>
+              <th>當動詞原意為「被動」<br>變化為「過去分詞」</th>
+            </tr>
+            <tr>
+              <td>adj. + 分詞</td>
+              <td>Brendan wants a new hairstyle <u>that looks good</u>.<br>
+                = Brendan wants a <b>good-looking</b> new hairstyle.<br>
+                布萊登想要一個好看的新髮型。</td>
+              <td>Kelly likes to buy meals <u>that are made ready</u>.<br>
+                = Kelly likes to buy <b>ready-made</b> meals.<br>
+                凱莉喜歡買現成的餐點。</td>
+              </tr>
+            <tr>
+              <td>adv. + 分詞</td>
+              <td>Monica is a student <u>who works hard</u>.<br>
+                = Monica is a <b>hard-working student</b>.<br>
+                莫妮卡是一位勤奮的學生。
+              </td>
+              <td>Of all the service dogs ever trained, the one <u>that was known best</u> was Gretel.<br>
+                = One of the most <b>well-known</b> service dogs ever trained was Gretel.<br>
+                (課文句子)
+              </td>
+            </tr>
+            <tr>
+              <td>N + 分詞</td>
+              <td>Cleaning is a job <u>that consumes time</u>.<br>
+                = Cleaning a a <b>time-consuming</b> job.<br>
+                清掃是件耗時的工作。</td>
+              <td>The Great Wall is the world's largest structure <u> that was made by man</u>.<br>
+                = The Great Wall is the world's largest <b>man-made</b> structure.<br>
+                萬里長城是世界上最大的人造建築物。</td>
+            </tr>
+          </table>
+          <p><b>常見與Well有關的複合形容詞如下:<br>
+            well-behaved 行為端正的 ; well-dressed 穿著體面的 ;<br>
+            well-ordered 有秩序的   ; well-rounded 才藝雙全的 ;<br>
+            well-meant 好意的       ; well-educated 受過良好教育的<br>
+            _____________________________________________________________________________________________________________</p>
+
+          <h2><font style="color:#3EA99F">LET'S PRACTICE</font>  請依指示填入正確的複合形容詞</h2>
+        </div>
+        <div class="question">
+          1. 艾咪每天讀報紙，因此他見多識廣。
+          <br>
+          Amy is <input type="text" name="a1" id="a1" ></input>(well, inform) because she reads newspapers every day.
+          <br><br>
+          2. 這對夫妻有段長久的婚姻。
+          <br>
+          The couple has a <input type="text" name="a2" id="a2" ></input>(long, last) marriage.
+        </div>
+        <br>
+        <div id="doExerciseBtn">
+          <input type="button" value="看答案" class="bTranslation" id="bDo" onclick="seeAns(this)">
+          <!--<input type="button" value="取消作答" class="bTranslation" id="bCancelDo" onclick="cancelDoExerciseClick(this)">-->
+        </div>
+        <br>
+        <div id="ansOfFilling">
+          1. Amy is <u><b>well-informed</b></u> because she reads newspapers every day.<br><br>
+          2. The couple has a <u><b>long-lasting</b></u> marriage.<br>
+        </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="../../images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><img src="../../images/twitter.png" alt="twitter" />&nbsp;<img src="../../images/facebook.png" alt="facebook" />&nbsp;<img src="../../images/rss.png" alt="rss" /></p>
+      <p><a href="../../index.html">首頁</a> | <a href="../../back/background.html">背景簡介</a> | <a href="../../understanding/understanding.html">全文</a> | <a href="../quizUnit1.html">測驗</a></p>
+      <p>Copyright &copy; CSS3_clouds | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>
